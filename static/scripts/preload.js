@@ -379,7 +379,7 @@
 })
 
 
-window.__ENV__ = "production",
+window.__ENV__ = "production"
 //window.BIA_STATIC_ASSET_URL = "http://навык.рус",
 //window.BIA_STYLE_URL = "http://навык.рус/static/style.css",
 //window.BIA_SRC_FILES = {
