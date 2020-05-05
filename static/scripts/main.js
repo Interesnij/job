@@ -10204,7 +10204,7 @@
             location: "stickers/banana"
         },
         stickerBullet: {
-            location: "stickers/bullet"
+            location: "bullet"
         },
         stickerOutOfStock: {
             location: "stickers/outOfStock"
