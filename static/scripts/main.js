@@ -43759,7 +43759,6 @@
                     value: function(e) {
                         return m.default.Children.toArray(e.children)[0] || null
                     }
-                }
                 }]), n
             }(m.default.Component);
         t.default = T
