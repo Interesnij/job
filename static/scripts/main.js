@@ -6407,7 +6407,7 @@
                 YB: ["#FFD84C", "#00AD46", "#00AD46"]
             },
             background: {
-                url: "/img/patterns/cartoon-full-yellow.svg",
+                url: "/static/images/cartoon-full-yellow.svg",
                 opacity: 1
             }
         },
@@ -6417,7 +6417,7 @@
                 YB: ["#9CD5F6", "#ED152B", "#ED152B"]
             },
             background: {
-                url: "/img/patterns/dots.svg",
+                url: "/static/images/dots.svg",
                 opacity: .15
             }
         },
@@ -6437,7 +6437,7 @@
                 YB: ["#E7919E", "#FF7F00", "#FF7F00"]
             },
             background: {
-                url: "/img/patterns/dots.svg",
+                url: "/static/images/dots.svg",
                 opacity: .15
             }
         },
@@ -6447,7 +6447,7 @@
                 YB: ["#EDB03C", "#61C6E0", "#357C91"]
             },
             background: {
-                url: "/img/patterns/dots.svg",
+                url: "/static/images/dots.svg",
                 opacity: .15
             }
         },
@@ -6457,7 +6457,7 @@
                 YB: ["#91CFF5", "#9036DF", "#357C91"]
             },
             background: {
-                url: "/img/calendar/blue-lines.svg",
+                url: "/static/images/blue-lines.svg", // нет
                 opacity: 1
             }
         },
@@ -6467,7 +6467,7 @@
                 YB: ["#E48694", "#FDCA42", "#357C91"]
             },
             background: {
-                url: "/img/calendar/pink-dots.svg",
+                url: "/static/images/pink-dots.svg",
                 opacity: 1
             }
         },
@@ -6477,7 +6477,7 @@
                 YB: ["#36975D", "#E7919E", "#4DA671"]
             },
             background: {
-                url: "/img/calendar/green-lines.svg",
+                url: "/static/images/green-lines.svg",
                 opacity: 1
             }
         }
@@ -6585,7 +6585,7 @@
                 })) : "news" !== this.props.type ? u.default.createElement("div", {
                     className: p.default.textWrapper
                 }, "white_on_black" === this.props.textStyle && u.default.createElement("img", {
-                    src: (0, f.getStaticAssetUrl)("/img/home/bg.png"),
+                    src: (0, f.getStaticAssetUrl)("/static/images/bg.png"),
                     className: p.default.blackBackground
                 }), u.default.createElement("h3", {
                     className: (0, f.mergeClassNames)(p.default.title, r),
@@ -9605,7 +9605,7 @@
                     }, l.default.createElement(c.Image, {
                         image: {
                             sizes: {
-                                small: "/img/calendar/flames.png"
+                                small: "/static/images/flames.png"
                             }
                         }
                     })))
@@ -26013,7 +26013,7 @@
                     className: C.default.footerImage,
                     image: {
                         sizes: {
-                            small: "/img/calendar/past-events.svg"
+                            small: "/static/images/past-events.svg"
                         }
                     },
                     size: "centered"
@@ -26022,7 +26022,7 @@
                 }, m.default.createElement(_.Image, {
                     image: {
                         sizes: {
-                            small: "/img/calendar/flames.png"
+                            small: "/static/images/flames.png"
                         }
                     }
                 })))
@@ -26260,16 +26260,16 @@
                         sizes: {
                             "small-height": 235,
                             "small-width": 134,
-                            small: "/img/dividers/sharkSmall.png",
+                            small: "/static/images/sharkSmall.png",
                             "medium-height": 392,
                             "medium-width": 224,
-                            medium: "/img/dividers/sharkMedium.png",
+                            medium: "/static/images/sharkMedium.png",
                             "large-height": 588,
                             "large-width": 335,
-                            large: "/img/dividers/sharkLarge.png",
+                            large: "/static/images/sharkLarge.png",
                             "xLarge-height": 784,
                             "xLarge-width": 447,
-                            xLarge: "/img/dividers/shark.png"
+                            xLarge: "/static/images/shark.png"
                         }
                     }
                 })))
@@ -36862,7 +36862,7 @@
                     size: "centered",
                     image: {
                         sizes: {
-                            small: "/img/home/unicorn.png"
+                            small: "/static/images/unicorn.png"
                         }
                     }
                 }), l.default.createElement(u.default, {
