@@ -386,9 +386,3 @@ window.__ENV__ = "production",
 //    js: "http://навык.рус/static/main.js",
 //    css: "http://навык.рус/static/style.css"
 //}
-window.BIA_STATIC_ASSET_URL = "https://cdn.studio-job.com/static",
-window.BIA_STYLE_URL = "https://cdn.studio-job.com/static/css/style.f5c14e3713a0da87fdda.min.css",
-window.BIA_SRC_FILES = {
-    js: "https://cdn.studio-job.com/static/js/bundle.f5c14e3713a0da87fdda.min.js",
-    css: "https://cdn.studio-job.com/static/css/style.f5c14e3713a0da87fdda.min.css"
-}
