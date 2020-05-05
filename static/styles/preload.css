@@ -181,7 +181,7 @@
 
 .bia_bg {
     width: calc(100% + 160px);
-    background-image: url(https://cdn.studio-job.com/static/img/patterns/tile.svg);
+    background-image: url(/static/images/tile.svg);
     background-size: 80px 96px;
     background-position: 50%;
     background-color: #e9ecee;

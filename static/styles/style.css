@@ -102,7 +102,7 @@
 }
 
 .haxWgv._266oMm {
-    background: url("https://cdn.studio-job.com/static/img/patterns/grey-bricks.svg");
+    background: url("/static/images/grey-bricks.svg");
     background-size: cover;
     background-color: #a6a8ab;
     background-size: 280px 277px
@@ -33192,7 +33192,7 @@
     min-height: 100vh;
     z-index: 1000;
     overflow: hidden;
-    background-image: url("https://cdn.studio-job.com/static/img/_dev/Home_mobile Copy@2x.png");
+    background-image: url("/static/images/Home_mobile Copy@2x.png");
     background-size: 100% auto;
     background-position: top;
     opacity: .4

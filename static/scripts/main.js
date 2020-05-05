@@ -33975,7 +33975,7 @@
             value: function(e) {
                 var t = this;
                 if (!e) return !1;
-                var n = (0, d.getStaticAssetUrl)("/img/svg/" + e + ".svg"),
+                var n = (0, d.getStaticAssetUrl)("/static/images/" + e + ".svg"),
                     a = document.createElement("img");
                 a.addEventListener("load", function() {
                     t.unmounting || t.setState({
