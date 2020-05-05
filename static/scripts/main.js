@@ -6362,7 +6362,6 @@
         value: !0
     }), t.default = {
         BowlbyOne: {
-            fonts: ["BowlbyOne", "LuckiestGuy"],
             lineHeights: ["1.06", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6373,7 +6372,6 @@
             }
         },
         FlyingLeatherneck: {
-            fonts: ["FlyingLeatherneck", "LuckiestGuy"],
             lineHeights: [".75", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6384,7 +6382,6 @@
             }
         },
         CartoonistKooky: {
-            fonts: ["CartoonistKooky", "FuturaSTDBoldOblique"],
             lineHeights: ["1", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6395,14 +6392,12 @@
             }
         },
         galleryTheme: {
-            fonts: ["FuturaExtraBold", "FuturaSTDBoldOblique"],
             lineHeights: ["1", " 1"],
             colors: {
                 YB: ["#000000", "#FFFFFF", "#000000", "#FFFFFF"]
             }
         },
         yellowGreen: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#FFD84C", "#00AD46", "#00AD46"]
             },
@@ -6412,7 +6407,6 @@
             }
         },
         blueRed: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#9CD5F6", "#ED152B", "#ED152B"]
             },
@@ -6422,7 +6416,6 @@
             }
         },
         yellowPurple: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#FEE89D", "#9C73BF", "#9C73BF"]
             },
@@ -6432,7 +6425,6 @@
             }
         },
         blueOrange: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#E7919E", "#FF7F00", "#FF7F00"]
             },
@@ -6442,7 +6434,6 @@
             }
         },
         orangeBlue: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#EDB03C", "#61C6E0", "#357C91"]
             },
@@ -6452,7 +6443,6 @@
             }
         },
         bluePurple: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#91CFF5", "#9036DF", "#357C91"]
             },
@@ -6462,7 +6452,6 @@
             }
         },
         pinkYellow: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#E48694", "#FDCA42", "#357C91"]
             },
@@ -6472,7 +6461,6 @@
             }
         },
         greenBrown: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#36975D", "#E7919E", "#4DA671"]
             },

@@ -10165,82 +10165,82 @@
             location: "insectPattern"
         },
         contactLips: {
-            location: "press/lips"
+            location: "lips"
         },
         contactMobile: {
-            location: "contact/contactMobile"
+            location: "contactMobile"
         },
         contactDesktop: {
-            location: "contact/contactDesktop"
+            location: "contactDesktop"
         },
         musicLp: {
-            location: "customs/music/lp"
+            location: "lp"
         },
         musicShades: {
-            location: "customs/music/shades"
+            location: "shades"
         },
         musicText: {
-            location: "customs/music/text"
+            location: "text"
         },
         musicStop: {
-            location: "customs/music/stop"
+            location: "stop"
         },
         musicAgain: {
-            location: "customs/music/again"
+            location: "again"
         },
         subscribeMedal: {
-            location: "emailSubscribe/medal"
+            location: "medal"
         },
         bannerAtJob: {
             location: "bannerAtJob"
         },
         stickerNoDiscount: {
-            location: "stickers/noDiscount"
+            location: "noDiscount"
         },
         stickerBuyNow: {
-            location: "stickers/buyNow"
+            location: "buyNow"
         },
         stickerBanana: {
-            location: "stickers/banana"
+            location: "banana"
         },
         stickerBullet: {
-            location: "stickers/bullet"
+            location: "bullet"
         },
         stickerOutOfStock: {
-            location: "stickers/outOfStock"
+            location: "outOfStock"
         },
         stickerHotdog: {
-            location: "stickers/hotdog"
+            location: "hotdog"
         },
         frameCrownLandscape: {
-            location: "frames/crownLandscape"
+            location: "crownLandscape"
         },
         frameCrownPortrait: {
-            location: "frames/crownPortrait"
+            location: "crownPortrait"
         },
         frameBlueSquare: {
-            location: "frames/blueSquare"
+            location: "blueSquare"
         },
         frameBlueSquareVertical: {
-            location: "frames/blueSquareVertical"
+            location: "blueSquareVertical"
         },
         framePlatter: {
-            location: "frames/platter"
+            location: "platter"
         },
         frameRedDiamonds: {
-            location: "frames/redDiamonds"
+            location: "redDiamonds"
         },
         frameStamp: {
-            location: "frames/stamp"
+            location: "stamp"
         },
         frameYellowLandscape: {
-            location: "frames/yellow"
+            location: "yellow"
         },
         frameYellowPortrait: {
-            location: "frames/yellowPortrait"
+            location: "fyellowPortrait"
         },
         luckyA: {
-            location: "dividers/worm/a"
+            location: "worm/a"
         },
         luckyE: {
             location: "dividers/worm/e"
@@ -10270,22 +10270,22 @@
             location: "dividers/worm/w"
         },
         wallBackground: {
-            location: "dividers/wall/background"
+            location: "background"
         },
         WallVery: {
-            location: "dividers/wall/very"
+            location: "very"
         },
         WallGood: {
-            location: "dividers/wall/good"
+            location: "good"
         },
         WallJob: {
-            location: "dividers/wall/job"
+            location: "job"
         },
         slimeBackground: {
-            location: "dividers/slime/background"
+            location: "background"
         },
         slimeText: {
-            location: "dividers/slime/text"
+            location: "text"
         },
         cardsBackground: {
             location: "dividers/cards/background"
@@ -33975,7 +33975,7 @@
             value: function(e) {
                 var t = this;
                 if (!e) return !1;
-                var n = (0, d.getStaticAssetUrl)("/img/svg/" + e + ".svg"),
+                var n = (0, d.getStaticAssetUrl)("/static/images/" + e + ".svg"),
                     a = document.createElement("img");
                 a.addEventListener("load", function() {
                     t.unmounting || t.setState({
