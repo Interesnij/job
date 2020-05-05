@@ -350,7 +350,12 @@
                     key: "loadAditionalStyling",
                     value: function() {
                         var e = document.createElement("link");
-                        e.href = window.BIA_STYLE_URL, e.type = "text/css", e.rel = "stylesheet", e.media = "screen,print", e.addEventListener("load", this.setStylesLoaded, !0), document.querySelector("head").appendChild(e)
+                        e.href = window.BIA_STYLE_URL,
+                        e.type = "text/css",
+                        e.rel = "stylesheet",
+                        e.media = "screen,print",
+                        e.addEventListener("load", this.setStylesLoaded, !0),
+                        document.querySelector("head").appendChild(e)
                     }
                 }, {
                     key: "initServiceWorker",
@@ -375,9 +380,15 @@
 
 
 window.__ENV__ = "production",
-window.BIA_STATIC_ASSET_URL = "http://навык.рус",
-window.BIA_STYLE_URL = "http://навык.рус/static/style.css",
+//window.BIA_STATIC_ASSET_URL = "http://навык.рус",
+//window.BIA_STYLE_URL = "http://навык.рус/static/style.css",
+//window.BIA_SRC_FILES = {
+//    js: "http://навык.рус/static/main.js",
+//    css: "http://навык.рус/static/style.css"
+//}
+window.BIA_STATIC_ASSET_URL = "https://cdn.studio-job.com/static",
+window.BIA_STYLE_URL = "https://cdn.studio-job.com/static/css/style.f5c14e3713a0da87fdda.min.css",
 window.BIA_SRC_FILES = {
-    js: "http://навык.рус/static/main.js",
-    css: "http://навык.рус/static/style.css"
+    js: "https://cdn.studio-job.com/static/js/bundle.f5c14e3713a0da87fdda.min.js",
+    css: "https://cdn.studio-job.com/static/css/style.f5c14e3713a0da87fdda.min.css"
 }

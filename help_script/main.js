@@ -2954,7 +2954,7 @@
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.Ec = t.FontLoader = t.CssRelPreload = t.CartSync = t.resizer = t.polyfill = t.rafScroll = void 0;
+    }), t.Ec = t.CssRelPreload = t.CartSync = t.resizer = t.polyfill = t.rafScroll = void 0;
     var a = u(n(296)),
         r = u(n(310)),
         o = u(n(311)),
@@ -2968,7 +2968,7 @@
             default: e
         }
     }
-    t.rafScroll = a.default, t.polyfill = o.default, t.resizer = r.default, t.CartSync = i.default, t.CssRelPreload = s.default, t.FontLoader = l.default, t.Ec = c.default
+    t.rafScroll = a.default, t.polyfill = o.default, t.resizer = r.default, t.CartSync = i.default, t.CssRelPreload = s.default, t.Ec = c.default
 }, function(e, t, n) {
     e.exports = {
         default: n(148),
@@ -4760,7 +4760,7 @@
         }
 
         function a(e, t) {
-            e.a.style.cssText = "max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;font:" + t + ";"
+            e.a.style.cssText = "max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;white-space:nowrap;font-synthesis:none;"
         }
 
         function r(e) {
@@ -6362,7 +6362,6 @@
         value: !0
     }), t.default = {
         BowlbyOne: {
-            fonts: ["BowlbyOne", "LuckiestGuy"],
             lineHeights: ["1.06", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6373,7 +6372,6 @@
             }
         },
         FlyingLeatherneck: {
-            fonts: ["FlyingLeatherneck", "LuckiestGuy"],
             lineHeights: [".75", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6384,7 +6382,6 @@
             }
         },
         CartoonistKooky: {
-            fonts: ["CartoonistKooky", "FuturaSTDBoldOblique"],
             lineHeights: ["1", " 1"],
             colors: {
                 YB: ["#FEC600", "#189BBF", "#7FC241", "#E7919E"],
@@ -6395,14 +6392,12 @@
             }
         },
         galleryTheme: {
-            fonts: ["FuturaExtraBold", "FuturaSTDBoldOblique"],
             lineHeights: ["1", " 1"],
             colors: {
                 YB: ["#000000", "#FFFFFF", "#000000", "#FFFFFF"]
             }
         },
         yellowGreen: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#FFD84C", "#00AD46", "#00AD46"]
             },
@@ -6412,7 +6407,6 @@
             }
         },
         blueRed: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#9CD5F6", "#ED152B", "#ED152B"]
             },
@@ -6422,7 +6416,6 @@
             }
         },
         yellowPurple: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#FEE89D", "#9C73BF", "#9C73BF"]
             },
@@ -6432,7 +6425,6 @@
             }
         },
         blueOrange: {
-            fonts: ["FuturaExtraBold", "CartoonistKooky"],
             colors: {
                 YB: ["#E7919E", "#FF7F00", "#FF7F00"]
             },
@@ -6442,7 +6434,6 @@
             }
         },
         orangeBlue: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#EDB03C", "#61C6E0", "#357C91"]
             },
@@ -6452,7 +6443,6 @@
             }
         },
         bluePurple: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#91CFF5", "#9036DF", "#357C91"]
             },
@@ -6462,7 +6452,6 @@
             }
         },
         pinkYellow: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#E48694", "#FDCA42", "#357C91"]
             },
@@ -6472,7 +6461,6 @@
             }
         },
         greenBrown: {
-            fonts: ["BowlbyOne", "FuturaBold"],
             colors: {
                 YB: ["#36975D", "#E7919E", "#4DA671"]
             },
@@ -6565,7 +6553,6 @@
         return (0, l.default)(t, e), (0, i.default)(t, [{
             key: "componentDidMount",
             value: function() {
-                this.props.addFont && this.props.newsStyle.family ? this.props.addFont(this.props.newsStyle.family) : this.props.addFont("FlyingLeatherneck")
             }
         }, {
             key: "render",
@@ -6606,12 +6593,9 @@
                     className: p.default.newsTitle,
                     style: {
                         color: this.props.newsStyle.color ? this.props.newsStyle.color : "#000",
-                        fontFamily: this.props.newsStyle.family ? this.props.newsStyle.family : "BowlbyOne"
                     },
                     text: this.props.title,
-                    fontFamily: this.props.newsStyle.family ? this.props.newsStyle.family : "BowlbyOne"
                 }), !("products" !== this.props.type || !this.props.productData.price) && u.default.createElement(d.PriceLabel, {
-                    addFont: this.props.addFont,
                     cartData: this.props.cartData,
                     productData: this.props.productData,
                     itemIndex: this.props.itemIndex,
@@ -8364,7 +8348,6 @@
                     className: (0, p.mergeClassNames)(h.default.header, !!n && h.default.menuOpen, !!s && h.default.cartOpen, !!o && h.default.searchOpen)
                 }, d.default.createElement(f.HeaderInner, {
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     history: this.props.history,
                     setFilter: this.props.setFilter,
                     getDefaultFilters: this.props.getDefaultFilters,
@@ -8386,7 +8369,6 @@
                     path: g
                 })), d.default.createElement(f.MainFilter, (0, a.default)({
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     getOptions: this.props.getOptions,
                     setFilter: this.props.setFilter,
                     workOpen: this.props.workOpen,
@@ -8398,7 +8380,6 @@
                 }, "filterOpen", c)), d.default.createElement(f.Menu, {
                     t: this.props.t,
                     history: this.props.history,
-                    addFont: this.props.addFont,
                     getOptions: this.props.getOptions,
                     setFilter: this.props.setFilter,
                     workOpen: this.props.workOpen,
@@ -8409,7 +8390,6 @@
                     toggleMenu: this.toggleMenu
                 }), d.default.createElement(f.Cart, {
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     getState: this.props.getState,
                     cartData: this.props.cartData,
                     getOptions: this.props.getOptions,
@@ -8709,11 +8689,9 @@
                     }, c.default.createElement(u.OverviewHeader, {
                         t: this.props.t,
                         type: this.state.route,
-                        addFont: this.props.addFont,
                         getOptions: this.props.getOptions
                     }), "shop" === this.props.route || "gallery" === this.props.route ? c.default.createElement(p.default, {
                         t: this.props.t,
-                        addFont: this.props.addFont,
                         getState: this.props.getState,
                         cartData: this.props.cartData,
                         getOptions: this.props.getOptions,
@@ -8728,7 +8706,6 @@
                         filters: e
                     }) : c.default.createElement(f.default, {
                         t: this.props.t,
-                        addFont: this.props.addFont,
                         getState: this.props.getState,
                         cartData: this.props.cartData,
                         getOptions: this.props.getOptions,
@@ -9572,7 +9549,7 @@
                 (0, r.default)(this, n);
                 var o = (0, i.default)(this, (n.__proto__ || (0, a.default)(n)).call(this, t)),
                     s = "Studio Job - 404";
-                return "undefined" != typeof document ? document.title = s : e.pageTitle = s, o.setPageTitle(), o.props.addFont && o.props.addFont("druk-super"), o
+                return "undefined" != typeof document ? document.title = s : e.pageTitle = s, o.setPageTitle()
             }
             return (0, s.default)(n, t), (0, o.default)(n, [{
                 key: "componentDidMount",
@@ -10978,14 +10955,12 @@
                         className: E.default.title,
                         style: {
                             color: this.colors ? this.colors[2] : "",
-                            fontFamily: q[1]
                         },
                         text: y,
                         options: {
                             maxFontSize: 200
                         },
                         lineHeight: Y[1],
-                        fontFamily: q[1]
                     }), f.default.createElement("div", {
                         className: E.default.mask,
                         ref: function(t) {
@@ -11049,14 +11024,12 @@
                         className: (0, g.mergeClassNames)(E.default.headerTitle, E.default[A]),
                         style: {
                             color: this.colors ? this.colors[0] : "",
-                            fontFamily: q[0]
                         },
                         text: "" !== h ? h : t.name,
                         options: {
                             maxFontSize: 200
                         },
                         lineHeight: Y[0],
-                        fontFamily: q[0]
                     }), !!this.isGalleryItem && (V ? f.default.createElement(b.PriceLabelSimple, {
                         className: E.default.priceRequest,
                         text: "&euro;" + V
@@ -11124,7 +11097,6 @@
                         getState: this.props.getState,
                         getOptions: this.props.getOptions,
                         getProductVariations: this.props.getProductVariations,
-                        addFont: this.props.addFont,
                         cartData: this.props.cartData,
                         removeProductFromCart: this.props.removeProductFromCart,
                         addProductsToCart: this.props.addProductsToCart,
@@ -11140,13 +11112,11 @@
                         t: this.props.t,
                         getState: this.props.getState,
                         getOptions: this.props.getOptions,
-                        addFont: this.props.addFont,
                         colors: this.colors,
                         toggleContactFormOverlay: this.toggleContactFormOverlay,
                         toggleEnquireFormOverlay: this.toggleEnquireFormOverlay
                     })), this.renderFlexibleContent(z, X, h), f.default.createElement(b.SingleNavigation, {
                         t: this.props.t,
-                        addFont: this.props.addFont,
                         getState: this.props.getState,
                         match: this.props.match,
                         overviewLink: this.getOverviewLink(),
@@ -11244,7 +11214,6 @@
                                     key: "block-" + a
                                 }, f.default.createElement(b.Quote, (0, r.default)({}, e, {
                                     className: E.default.layoutItem,
-                                    addFont: t.props.addFont,
                                     rafScroll: !!t.state.rafScroll && t.rafScroll
                                 })));
                             case "360_view":
@@ -11261,7 +11230,6 @@
                                     className: (0, g.mergeClassNames)(E.default.smallTextBlock, E.default.section),
                                     key: "block-" + a
                                 }, f.default.createElement(b.ConceptBlock, {
-                                    addFont: t.props.addFont,
                                     className: E.default.layoutItem,
                                     data: e
                                 }));
@@ -11271,7 +11239,6 @@
                                     key: "block-" + a
                                 }, f.default.createElement(b.ProcessBlock, {
                                     title: n,
-                                    addFont: t.props.addFont,
                                     className: E.default.layoutItem,
                                     data: e,
                                     rafScroll: !!t.state.rafScroll && t.rafScroll,
@@ -11317,7 +11284,6 @@
                                     className: (0, g.mergeClassNames)(E.default.uspBlock, E.default.section),
                                     key: "block-" + a
                                 }, f.default.createElement(b.UspBlock, {
-                                    addFont: t.props.addFont,
                                     className: E.default.layoutItem,
                                     rafScroll: !!t.state.rafScroll && t.rafScroll,
                                     setCursor: t.setCursor,
@@ -11850,7 +11816,6 @@
                         className: g.default.layoutItem
                     }))), this.renderFlexibleContent(t.acf.content_items), d.default.createElement(m.SingleNavigation, {
                         t: this.props.t,
-                        addFont: this.props.addFont,
                         getState: this.props.getState,
                         scrollTop: this.scrollTop,
                         fetchAdditional: this.fetchAdditional,
@@ -15452,11 +15417,6 @@
         switch (e) {
             case "annotation-xml":
             case "color-profile":
-            case "font-face":
-            case "font-face-src":
-            case "font-face-uri":
-            case "font-face-format":
-            case "font-face-name":
             case "missing-glyph":
                 return !1;
             default:
@@ -19225,20 +19185,20 @@
     var s = function() {
         function e() {
             var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : window.location.origin;
-            (0, a.default)(this, e), this.siteUrl = t, this.headEl = document.querySelector("head"), this.fontsLoaded = [], this.load = this.load.bind(this)
+            (0, a.default)(this, e), this.siteUrl = t, this.headEl = document.querySelector("head"), this.load = this.load.bind(this)
         }
         return (0, r.default)(e, [{
             key: "load",
             value: function() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                if (e && !this.fontsLoaded.includes(e)) return this.fontsLoaded.push(e), this.addStyle(e)
+                this.addStyle(e)
             }
         }, {
             key: "addStyle",
             value: function() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
                     t = document.createElement("style"),
-                    n = ("\n\t\t\t@font-face {\n\t\t\t\tfont-family: '" + e + "';\n\t\t\t\tfont-display: swap;\n\t\t\t\tsrc: url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".eot") + "');\n\t\t\t\tsrc: url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".woff2") + "') format('woff2'),\n\t\t\t\t\t url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".woff") + "') format('woff'),\n\t\t\t\t\t url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".ttf") + "') format('truetype'),\n\t\t\t\t\t url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".otf") + "') format('opentype'),\n\t\t\t\t\t url('" + (0, o.getStaticAssetUrl)("/fonts/" + e + ".eot?#iefix") + "') format('embedded-opentype');\n\t\t\t\tfont-style: normal;\n\t\t\t}\n\t\t").replace(/\s/g, "");
+                    n = "";
                 t.type = "text/css", t.innerText = n, this.headEl.appendChild(t)
             }
         }]), e
@@ -22348,12 +22308,6 @@
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "componentDidUpdate",
             value: function() {
-                this.addFonts()
-            }
-        }, {
-            key: "addFonts",
-            value: function() {
-                !this.hasBeenOpen && (this.state.horizontal || this.state.vertical) && this.props.addFont && (this.hasBeenOpen = !0, this.props.addFont("CartoonistKooky"))
             }
         }, {
             key: "componentDidMount",
@@ -23063,7 +23017,6 @@
                             var y = e.formatBlocksData(o, l, u, r, c, i, f);
                             return !(y.noMore && i && (e.noMoreLayouts = !0, !y.blocks)) && (c = y.postTypesToFetch, u = y.data, f = y.newsToAbout, d++, h.default.createElement(m.Layout, {
                                 t: e.props.t,
-                                addFont: e.props.addFont,
                                 getState: e.props.getState,
                                 cartData: e.props.cartData,
                                 stickerCounter: e.stickerCounter,
@@ -23317,7 +23270,6 @@
                         var i = e.formatBlocksData(o, d, r, u, c);
                         return !(i.noMore && c && (e.noMoreLayouts = !0, !i.blocks)) && (u = i.postTypesToFetch, d = i.data, f++, h.default.createElement(m.LayoutSimple, {
                             t: e.props.t,
-                            addFont: e.props.addFont,
                             getState: e.props.getState,
                             cartData: e.props.cartData,
                             getOptions: e.props.getOptions,
@@ -24515,7 +24467,7 @@
                 return a.orderReqOut = !1, a.requestOut = [], a.state = {
                     order: 0,
                     orderData: {}
-                }, a.props.addFont && a.props.addFont("FridayNight"), a
+                }, a
             }
             return (0, l.default)(t, e), (0, i.default)(t, [{
                 key: "viewDidMount",
@@ -24836,7 +24788,7 @@
                 indicatorPosition: "initial",
                 letterIndex: -1,
                 indicatorOffsetX: 0
-            }, a.unmounting = !1, a.coloredLetters = new Array, a.props.addFont && (a.props.addFont("FlyingLeatherneckRotate"), a.props.addFont("CartoonistKooky"), a.props.addFont("FuturaBold"), a.props.addFont("FuturaStdEBC"), a.props.addFont("FuturaBQ"), a.props.addFont("BowlbyOne")), a.frames = [1, 0, 2], a.years = new Array, (0, f.bind)(a, "onScroll", "onResize"), a
+            }, a.unmounting = !1, a.coloredLetters = new Array, a.frames = [1, 0, 2], a.years = new Array, (0, f.bind)(a, "onScroll", "onResize"), a
         }
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "viewDidMount",
@@ -25833,7 +25785,7 @@
                 }));
             return a.state = {
                 divider: {}
-            }, a.recalcBounds = !1, a.images = new Array, a.items = new Array, a.scrollableImages = new Array, a.imageBounds = new Array, a.props.addFont && a.props.addFont("CartoonistKooky"), a.props.addFont && a.props.addFont("BowlbyOne"), a.props.addFont && a.props.addFont("FuturaBold"), a.props.addFont && a.props.addFont("FuturaSTD"), a.toggleDividerInView = a.toggleDividerInView.bind(a), a.onScroll = a.onScroll.bind(a), a
+            }, a.recalcBounds = !1, a.images = new Array, a.items = new Array, a.scrollableImages = new Array, a.imageBounds = new Array, a.toggleDividerInView = a.toggleDividerInView.bind(a), a.onScroll = a.onScroll.bind(a), a
         }
         return (0, p.default)(t, e), (0, d.default)(t, [{
             key: "viewDidMount",
@@ -25916,8 +25868,7 @@
                         className: C.default.divider
                     }, m.default.createElement(q, {
                         className: C.default.dividerInner,
-                        inView: "undefined" == typeof document || e.state.divider[Y],
-                        addFont: e.props.addFont
+                        inView: "undefined" == typeof document || e.state.divider[Y]
                     }), m.default.createElement(v.default, {
                         tag: "div",
                         className: C.default.dividerObserver,
@@ -25954,7 +25905,6 @@
                         className: C.default.headline,
                         style: {
                             color: M,
-                            fontFamily: p[0]
                         },
                         dangerouslySetInnerHTML: {
                             __html: N
@@ -26529,7 +26479,7 @@
                     backgroundColor: "#fff",
                     marks: []
                 }, this.targets = new Array, this.translateX = 0, this.speed = 1;
-                this.loopingText = "Do good work for bad people ".split(""), this.props.addFont && this.props.addFont("FuturaSTDBoldOblique"), (0, h.bind)(this, "shootTarget", "shootContainer", "placeMarker")
+                this.loopingText = "Do good work for bad people ".split(""), (0, h.bind)(this, "shootTarget", "shootContainer", "placeMarker")
             }
         }, {
             key: "dividerDidMount",
@@ -26737,7 +26687,7 @@
             key: "dividerSetup",
             value: function() {
                 this.containerClassName = d.default.container;
-                this.textArray = "Very Good Job".split(" "), this.props.addFont && this.props.addFont("Druk-Super")
+                this.textArray = "Very Good Job".split(" ")
             }
         }, {
             key: "renderInner",
@@ -27353,7 +27303,7 @@
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "dividerSetup",
             value: function() {
-                this.containerClassName = d.default.container, this.translateX = 0, this.props.addFont && this.props.addFont("Headhunter")
+                this.containerClassName = d.default.container, this.translateX = 0
             }
         }, {
             key: "renderInner",
@@ -27613,7 +27563,7 @@
             value: function() {
                 this.containerClassName = d.default.container, this.translateX = 0, this.factor = window.innerWidth < 1024 ? 28.6 : 14.5, this.speed = window.innerWidth < 1024 ? 2 : 1;
                 var e = encodeURIComponent('\n            <polygon fill="#ED152B" points="0,0 0,0 0,851 93,851 385,0"/>\n            <polygon fill="#fff" points="771,0 386,0 93,851 478,851 771,0"/>\n            <polygon fill="#ED152B" points="771,0 478,851 771,851"/>\n        ');
-                this.backgroundImage = 'url("data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 770 851" style="enableBackground:new 0 0 770 851;" xml:space="preserve">') + e + encodeURIComponent("</svg>") + '")', this.props.addFont && this.props.addFont("Druk-Super")
+                this.backgroundImage = 'url("data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 770 851" style="enableBackground:new 0 0 770 851;" xml:space="preserve">') + e + encodeURIComponent("</svg>") + '")'
             }
         }, {
             key: "dividerDidMount",
@@ -27739,7 +27689,7 @@
                     to: -300,
                     y: -2,
                     rotate: -5
-                }], this.props.addFont && this.props.addFont("Druk-Super"), (0, d.bind)(this, "startInterval", "collectCards", "shuffleCards", "dealCards", "transform")
+                }], (0, d.bind)(this, "startInterval", "collectCards", "shuffleCards", "dealCards", "transform")
             }
         }, {
             key: "dividerDidMount",
@@ -28207,7 +28157,7 @@
                 }));
             return a.state = {
                 leftFixed: !1
-            }, a.props.addFont && a.props.addFont("FuturaBold"), a.props.addFont && a.props.addFont("CartoonistKooky"), (0, p.bind)(a, "onScroll", "renderAtJob", "onResize"), a
+            }, (0, p.bind)(a, "onScroll", "renderAtJob", "onResize"), a
         }
         return (0, u.default)(t, e), (0, l.default)(t, [{
             key: "viewDidMount",
@@ -28715,7 +28665,6 @@
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "stickerSetup",
             value: function() {
-                this.props.addFont && this.props.addFont("FlyingLeatherneck")
             }
         }, {
             key: "renderInner",
@@ -28843,7 +28792,7 @@
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "stickerSetup",
             value: function() {
-                this.smallBlock = 6 === this.props.layoutIndex, this.smallBlock && this.props.addFont && this.props.addFont("CartoonistKooky")
+                this.smallBlock = 6 === this.props.layoutIndex
             }
         }, {
             key: "renderInner",
@@ -29113,7 +29062,6 @@
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "stickerSetup",
             value: function() {
-                this.props.addFont && this.props.addFont("CrimeFighterBB")
             }
         }, {
             key: "renderInner",
@@ -30380,7 +30328,7 @@
             }, a.state = {
                 subscribed: !1,
                 articlesLeft: new Array
-            }, a.translateY = 0, a.rows = new Array, a.articles = new Array, a.acfArticles = !1, a.props.addFont && a.props.addFont("FuturaBold"), a.props.addFont && a.props.addFont("FuturaExtraBold"), (0, f.bind)(a, "updateData", "submitForm", "rafLoop", "renderArticles"), a
+            }, a.translateY = 0, a.rows = new Array, a.articles = new Array, a.acfArticles = !1, (0, f.bind)(a, "updateData", "submitForm", "rafLoop", "renderArticles"), a
         }
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "viewDidMount",
@@ -30678,7 +30626,7 @@
                     breadCrumb: n,
                     simplePage: !0
                 }));
-            return o.props.addFont && o.props.addFont("CartoonistKooky"), o.props.addFont && o.props.addFont("BowlbyOne"), o
+            return o
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "viewDidMount",
@@ -31521,7 +31469,6 @@
                     component: this.props.firstChild
                 }, !(!n || e) && l.default.createElement(m, {
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     dismissCookiePopUp: this.props.dismissCookiePopUp
                 }))
             }
@@ -31820,7 +31767,7 @@
                 initials: "",
                 variationId: null,
                 quantity: 1
-            }, n.props.addFont && (n.props.addFont("ProclamateHeavy"), n.props.addFont("FuturaBold"), n.props.addFont("DINCondensed")), n.decreaseQuantity = n.changeQuantity.bind(n, -1), n.increaseQuantity = n.changeQuantity.bind(n, 1), (0, p.bind)(n, "addToCart", "selectVariation", "setInitials"), n
+            }, n.decreaseQuantity = n.changeQuantity.bind(n, -1), n.increaseQuantity = n.changeQuantity.bind(n, 1), (0, p.bind)(n, "addToCart", "selectVariation", "setInitials"), n
         }
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "setInitials",
@@ -32029,7 +31976,6 @@
                     onSubmit: this.addToCart
                 }, d.default.createElement(f.PriceLabel, {
                     className: h.default.price,
-                    addFont: this.props.addFont,
                     productData: {
                         discount: c !== m,
                         price: c,
@@ -32149,7 +32095,7 @@
         function t(e) {
             (0, r.default)(this, t);
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-            return n.props.addFont && (n.props.addFont("ProclamateHeavy"), n.props.addFont("FuturaBold")), n
+            return n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "render",
@@ -32176,7 +32122,6 @@
                     action: this.props.toggleContactFormOverlay
                 }), this.props.price && c.default.createElement(d.PriceLabel, {
                     className: f.default.price,
-                    addFont: this.props.addFont,
                     text: "&euro;" + this.props.price
                 }))
             }
@@ -32309,7 +32254,6 @@
                         }, c.default.createElement(u.DesktopMenu, {
                             t: this.props.t,
                             history: this.props.history,
-                            addFont: this.props.addFont,
                             getOptions: this.props.getOptions,
                             setFilter: this.props.setFilter,
                             getState: this.props.getState,
@@ -32320,7 +32264,6 @@
                             className: f.default.breadcrumbs
                         }, c.default.createElement(u.BreadCrumbs, {
                             t: this.props.t,
-                            addFont: this.props.addFont,
                             history: this.props.history,
                             setFilter: this.props.setFilter,
                             getDefaultFilters: this.props.getDefaultFilters,
@@ -32354,7 +32297,6 @@
                             className: f.default.searchWrap
                         }, c.default.createElement(u.Search, {
                             t: this.props.t,
-                            addFont: this.props.addFont,
                             history: this.props.history,
                             setFilter: this.props.setFilter,
                             getDefaultFilters: this.props.getDefaultFilters,
@@ -32553,12 +32495,6 @@
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "componentDidUpdate",
             value: function() {
-                this.addFonts()
-            }
-        }, {
-            key: "addFonts",
-            value: function() {
-                !this.hasBeenOpen && this.props.isOpen && this.props.addFont && (this.hasBeenOpen = !0, this.props.addFont("FuturaBQ"), this.props.addFont("FuturaBold"))
             }
         }, {
             key: "componentDidUpdate",
@@ -32614,7 +32550,6 @@
                     className: (0, p.mergeClassNames)(h.default.divLink, h.default.subMenu)
                 }, u.default.createElement(f.SubMenu, {
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     menu: (0, p.getItem)({
                         postType: "menus",
                         props: this.props,
@@ -32871,12 +32806,6 @@
         return (0, l.default)(t, e), (0, i.default)(t, [{
             key: "componentDidUpdate",
             value: function() {
-                this.addFonts()
-            }
-        }, {
-            key: "addFonts",
-            value: function() {
-                !this.hasBeenOpen && this.props.isOpen && this.props.addFont && (this.hasBeenOpen = !0, this.props.addFont("FuturaBQ"))
             }
         }, {
             key: "render",
@@ -33058,12 +32987,6 @@
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "componentDidUpdate",
             value: function() {
-                this.addFonts()
-            }
-        }, {
-            key: "addFonts",
-            value: function() {
-                !this.hasBeenOpen && this.props.isOpen && this.props.addFont && (this.hasBeenOpen = !0, this.props.addFont("FuturaBQ"))
             }
         }, {
             key: "componentDidMount",
@@ -33288,12 +33211,6 @@
         }, {
             key: "componentDidUpdate",
             value: function() {
-                this.addFonts()
-            }
-        }, {
-            key: "addFonts",
-            value: function() {
-                !this.hasBeenOpen && this.props.isOpen && this.props.addFont && (this.hasBeenOpen = !0, this.props.addFont("BowlbyOne"), this.props.addFont("ProclamateHeavy"), this.props.addFont("FuturaBQ"))
             }
         }, {
             key: "setupFilters",
@@ -33885,7 +33802,6 @@
                             className: o
                         }, c.default.createElement(u.Filter, {
                             t: this.props.t,
-                            addFont: this.props.addFont,
                             getOptions: this.props.getOptions,
                             setFilter: this.props.setFilter,
                             workOpen: this.props.workOpen,
@@ -35118,7 +35034,7 @@
         function t(e) {
             (0, r.default)(this, t);
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-            return n.props.addFont && n.props.addFont("DINCondensed"), n
+            return n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "render",
@@ -35295,7 +35211,6 @@
                         };
                     return p.default.createElement("div", u, !!this.state.inView && p.default.createElement(f.Fragment, null, this.renderLayoutItems(this.props.blocks, l, n), i), !!this.shouldRenderDivider && p.default.createElement(t, {
                         className: this.props.layoutData.style.divider,
-                        addFont: this.props.addFont,
                         inView: this.state.inView
                     }), p.default.createElement(h.default, d))
                 }
@@ -35320,12 +35235,10 @@
                         }, a.parseBlockData(e), i, {
                             itemIndex: r,
                             layoutIndex: a.props.index,
-                            addFont: a.props.addFont,
                             cartData: a.props.cartData,
                             zIndex: s,
                             Frame: !(!n || r !== n.itemIndex - 1) && n.component,
                             newsStyle: {
-                                family: e.acf && e.acf.block_text_font,
                                 color: e.acf && e.acf.text_block_text_color
                             }
                         })))
@@ -35354,7 +35267,6 @@
                             key: "sticker-" + r + "-" + a,
                             triggerOnce: !0
                         }, p.default.createElement(i, {
-                            addFont: t.props.addFont,
                             inView: t.state.stickersInView["sticker-" + a]
                         })))
                     }), n
@@ -35607,7 +35519,6 @@
                 }), !!this.shouldRenderUsp && u.default.createElement(p.UspGallery, {
                     className: h.default.divider,
                     inView: this.state.inView,
-                    addFont: this.props.addFont,
                     getOptions: this.props.getOptions
                 }), u.default.createElement(d.default, n))
             }
@@ -35628,7 +35539,6 @@
                         onGalleryOverview: t.props.onGalleryOverview
                     }, t.parseBlockData(e), {
                         itemIndex: n,
-                        addFont: t.props.addFont,
                         cartData: t.props.cartData,
                         zIndex: r,
                         newsStyle: {
@@ -35875,7 +35785,6 @@
                         className: g.default.background,
                         isHovered: this.state.isHovered
                     }, n)), !(!r || !r.obj) && (l && s ? this.renderFrame() : this.renderImage()), !(!o || !o.show) && u.default.createElement(y.default, (0, a.default)({
-                        addFont: this.props.addFont,
                         filtered: this.props.filtered,
                         productData: this.props.productData,
                         cartData: this.props.cartData,
@@ -35958,7 +35867,6 @@
                     var t = e.substr(_.length),
                         n = m.default[t];
                     return n ? u.default.createElement(n, {
-                        addFont: this.props.addFont,
                         t: this.props.t,
                         layoutIndex: this.props.layoutIndex
                     }) : u.default.createElement("div", null)
@@ -36003,7 +35911,7 @@
         function t(e) {
             (0, r.default)(this, t);
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-            return n.currentTranslationValue = 0, n.nextTranslationValue = 0, n.translationValue = 0, n.props.addFont && n.props.addFont("ProclamateHeavy"), n.renderSvg = n.renderSvg.bind(n), n.onScroll = n.onScroll.bind(n), n
+            return n.currentTranslationValue = 0, n.nextTranslationValue = 0, n.translationValue = 0, n.renderSvg = n.renderSvg.bind(n), n.onScroll = n.onScroll.bind(n), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "componentDidMount",
@@ -36457,7 +36365,7 @@
         function t(e) {
             (0, o.default)(this, t);
             var n = (0, s.default)(this, (t.__proto__ || (0, r.default)(t)).call(this, e));
-            return n.TITLE = ["Sign up to", "get spam", "in your mail"], n.onScroll = n.onScroll.bind(n), n.props.addFont && n.props.addFont("FlyingLeatherneck"), n
+            return n.TITLE = ["Sign up to", "get spam", "in your mail"], n.onScroll = n.onScroll.bind(n), n
         }
         return (0, l.default)(t, e), (0, i.default)(t, [{
             key: "componentDidMount",
@@ -36660,7 +36568,7 @@
             }, {
                 x: .35,
                 y: .35
-            }), n.props.addFont && n.props.addFont("ProclamateHeavy"), n.onMouseEnter = n.onMouseEnter.bind(n), n.onMouseLeave = n.onMouseLeave.bind(n), n
+            }), n.onMouseEnter = n.onMouseEnter.bind(n), n.onMouseLeave = n.onMouseLeave.bind(n), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "componentDidMount",
@@ -36866,7 +36774,6 @@
                         }
                     }
                 }), l.default.createElement(u.default, {
-                    addFont: this.props.addFont,
                     className: d.default.text,
                     title: "Unicorn",
                     text: "&euro;0"
@@ -37078,7 +36985,7 @@
         function t(e) {
             (0, r.default)(this, t);
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-            return n.props.addFont && n.props.addFont("FlyingLeatherneck"), (0, u.bind)(n, "onMouseLeave", "onMouseMove", "setDeviceAlpha", "rafLoop"), n
+            return (0, u.bind)(n, "onMouseLeave", "onMouseMove", "setDeviceAlpha", "rafLoop"), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "componentDidMount",
@@ -37430,7 +37337,6 @@
                     o = e.itemIndex,
                     i = e.textStyle;
                 return u.default.createElement(c.Fragment, null, !(!n || !n.obj) && this.renderImage(), !(!r || !r.show) && u.default.createElement(h.default, (0, a.default)({
-                    addFont: this.props.addFont,
                     filtered: this.props.filtered,
                     productData: this.props.productData,
                     cartData: this.props.cartData,
@@ -37715,7 +37621,7 @@
             function t(e) {
                 (0, r.default)(this, t);
                 var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-                return n.props.addFont && n.props.addFont("FuturaBold"), n.state = {
+                return n.state = {
                     stickerPosition: "initial",
                     isMobileScreen: !1
                 }, n.oldState = n.state.stickerPosition, n.translateX = 0, n.rafLoop = n.rafLoop.bind(n), (0, m.bind)(n, "onResize"), n
@@ -38188,7 +38094,7 @@
         function t(e) {
             (0, r.default)(this, t);
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
-            return n.translateX = 0, n.onScrollAdded = !1, n.props.addFont && n.props.addFont("ProclamateHeavy"), n.props.addFont && n.props.addFont("LuckiestGuy"), n.props.addFont && n.props.addFont("FlyingLeatherneck"), n.toggleInView = n.toggleInView.bind(n), n.onScroll = n.onScroll.bind(n), n
+            return n.translateX = 0, n.onScrollAdded = !1, n.toggleInView = n.toggleInView.bind(n), n.onScroll = n.onScroll.bind(n), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "componentDidMount",
@@ -38252,7 +38158,6 @@
                         className: (0, u.mergeClassNames)(d.default.text, d.default[t]),
                         key: "quote-" + r,
                         style: {
-                            fontFamily: t,
                             color: n
                         },
                         dangerouslySetInnerHTML: {
@@ -38427,8 +38332,7 @@
                     text: this.props.data.intro_title,
                     options: {
                         maxFontSize: 200
-                    },
-                    fontFamily: "CartoonistKooky"
+                    }
                 }), !!this.props.data.intro_text && c.default.createElement("p", {
                     style: t,
                     dangerouslySetInnerHTML: {
@@ -38496,7 +38400,7 @@
             var n = (0, i.default)(this, (t.__proto__ || (0, a.default)(t)).call(this, e));
             return n.state = {
                 imagePosition: "top"
-            }, n.flkty = !1, n.onScrollAdded = !1, n.props.addFont && n.props.addFont("CartoonistKooky"), n.props.addFont && n.props.addFont("BowlbyOne"), (0, d.bind)(n, "getBounds", "onScroll", "onResize"), n
+            }, n.flkty = !1, n.onScrollAdded = !1, (0, d.bind)(n, "getBounds", "onScroll", "onResize"), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "componentDidMount",
@@ -38682,7 +38586,7 @@
             var n = (0, l.default)(this, (t.__proto__ || (0, o.default)(t)).call(this, e));
             return n.state = {
                 open: !1
-            }, n.props.addFont && n.props.addFont("FuturaBold"), n.toggleContact = n.toggleContact.bind(n), n
+            }, n
         }
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "render",
@@ -38940,7 +38844,7 @@
         function t(e) {
             (0, s.default)(this, t);
             var n = (0, c.default)(this, (t.__proto__ || (0, i.default)(t)).call(this, e));
-            return n.props.addFont && n.props.addFont("FuturaBold"), n
+            return n
         }
         return (0, u.default)(t, e), (0, l.default)(t, [{
             key: "render",
@@ -39195,7 +39099,7 @@
         function t(e) {
             (0, i.default)(this, t);
             var n = (0, l.default)(this, (t.__proto__ || (0, o.default)(t)).call(this, e));
-            return n.props.addFont && n.props.addFont("LuckiestGuy"), n.getAdjacentPostID = n.getAdjacentPostID.bind(n), n
+            return n.getAdjacentPostID = n.getAdjacentPostID.bind(n), n
         }
         return (0, c.default)(t, e), (0, s.default)(t, [{
             key: "getAdjecentPosts",
@@ -39358,7 +39262,7 @@
                     window.BIA_TOUCHDEVICE && n.state.isMouseDown && (n.touchobj = e.changedTouches[0], n.dist = parseInt(n.touchobj.clientX) - n.startx, n.translateX = n.translateX < -n.containerBounds.width ? 0 : n.translateX > 0 ? -n.containerBounds.width : n.translateX + n.dist, n.inner.style.transform = "translate3d(" + n.translateX + "px, 0, 0) ")
                 }, n.rafLoop = function() {
                     n.inner && (n.state.isHover || (n.translateX = n.translateX < -n.containerBounds.width ? 0 : n.translateX - .5, n.inner.style.transform = "translate3d(" + n.translateX + "px, 0, 0) "))
-                }, n.containerClassName = h.default.container, n.translateX = 0, n.onScrollAdded = !1, n.startx = 0, n.dist = 0, n.touchobj = null, n.props.addFont && n.props.addFont("FuturaExtraBold"), n.toggleInView = n.toggleInView.bind(n), n.onResize = n.onResize.bind(n), n
+                }, n.containerClassName = h.default.container, n.translateX = 0, n.onScrollAdded = !1, n.startx = 0, n.dist = 0, n.touchobj = null, n.toggleInView = n.toggleInView.bind(n), n.onResize = n.onResize.bind(n), n
             }
             return (0, c.default)(a, n), (0, s.default)(a, [{
                 key: "componentDidMount",
@@ -42845,7 +42749,7 @@
                     t.inner && (t.state.isHover || (t.translateX = t.translateX < -t.containerBounds.width ? 0 : t.translateX - .5, t.inner.style.transform = "translate3d(" + t.translateX + "px, 0, 0) "))
                 }, t.onResize = function(e) {
                     e.isLastTick && t.calcBounds()
-                }, t.containerClassName = f.default.container, t.translateX = 0, t.onScrollAdded = !1, t.startx = 0, t.dist = 0, t.touchobj = null, t.props.addFont && t.props.addFont("FuturaExtraBold"), t.rafLoop && (t.rafLoop = t.rafLoop.bind(t)), resizer.add(t.onResize), t
+                }, t.containerClassName = f.default.container, t.translateX = 0, t.onScrollAdded = !1, t.startx = 0, t.dist = 0, t.touchobj = null, t.rafLoop && (t.rafLoop = t.rafLoop.bind(t)), resizer.add(t.onResize), t
             }
             return (0, l.default)(n, t), (0, i.default)(n, [{
                 key: "componentDidMount",
@@ -43046,7 +42950,6 @@
                     component: this.props.firstChild
                 }, !!(t && i && this.state.show) && l.default.createElement(y, {
                     t: this.props.t,
-                    addFont: this.props.addFont,
                     dismissSubscribePopUp: this.props.dismissSubscribePopUp,
                     title: u,
                     description: f,
@@ -43065,7 +42968,7 @@
             }, n.state = {
                 send: !1,
                 succes: !1
-            }, (0, f.bind)(n, "updateEmail", "blurEmail", "submitEmail"), n.props.addFont && n.props.addFont("FuturaStdEBC"), n.dismissPopup = n.dismissPopup.bind(n), n
+            }, (0, f.bind)(n, "updateEmail", "blurEmail", "submitEmail"), n.dismissPopup = n.dismissPopup.bind(n), n
         }
         return (0, s.default)(t, e), (0, o.default)(t, [{
             key: "dismissPopup",
@@ -43306,9 +43209,6 @@
                 getState: function() {
                     return e
                 },
-                fontsLoaded: function() {
-                    return e.fontData
-                },
                 appData: function() {
                     return e.appData
                 },
@@ -43337,9 +43237,6 @@
                 },
                 cursorData: function() {
                     return e.cursorData
-                },
-                getFonts: function() {
-                    return e.fontData
                 },
                 getUserData: function() {
                     return e.userData
@@ -43577,7 +43474,7 @@
                     value: function() {
                         this.BIAPageMatch = !1, this.lastPage = "";
                         var e = "undefined" != typeof document ? window.location.pathname : location;
-                        this.checkOverviewPage(e), this.props.history && void 0 !== ("undefined" == typeof document ? "undefined" : (0, l.default)(document)) && (window.BIA_HTML = document.querySelector("html"), this.checkImageSupport(), this.FontLoader = new x.FontLoader, (0, C.bind)(this, "pageChange", "scrollListener", "firstChild", "setRouteMatch", "addFont"), this.showPageChanger = this.togglePageChanger.bind(this, !0), this.hidePageChanger = this.togglePageChanger.bind(this, !1), this.props.history.listen(this.pageChange), window.BIA_HISTORY = new Array, window.rafScroll = new x.rafScroll, window.resizer = new x.resizer)
+                        this.checkOverviewPage(e), this.props.history && void 0 !== ("undefined" == typeof document ? "undefined" : (0, l.default)(document)) && (window.BIA_HTML = document.querySelector("html"), this.checkImageSupport(), (0, C.bind)(this, "pageChange", "scrollListener", "firstChild", "setRouteMatch"), this.showPageChanger = this.togglePageChanger.bind(this, !0), this.hidePageChanger = this.togglePageChanger.bind(this, !1), this.props.history.listen(this.pageChange), window.BIA_HISTORY = new Array, window.rafScroll = new x.rafScroll, window.resizer = new x.resizer)
                     }
                 }, {
                     key: "togglePageChanger",
@@ -43735,7 +43632,6 @@
                     value: function() {
                         return this.isIE() ? this.renderNoSupport() : this.state.isMobileLandscape ? m.default.createElement(b.RotateDevice, null) : m.default.createElement(h.Fragment, null, m.default.createElement(_.default, {
                             suppressHydrationWarning: !0,
-                            addFont: this.addFont,
                             addWorks: this.props.addWorks,
                             addGalleryItems: this.props.addGalleryItems,
                             setNews: this.props.setNews,
@@ -43745,7 +43641,6 @@
                             removeProductFromCart: this.props.removeProductFromCart
                         }), this.formatRoutes("route-main", this.getMainRoutes()), this.formatRoutes("route-single", k.default), "undefined" != typeof document && m.default.createElement(b.SubscribePopup, {
                             t: this.props.t,
-                            addFont: this.addFont,
                             appData: this.props.appData,
                             optionsData: this.props.getOptions,
                             dismissSubscribePopUp: this.props.dismissSubscribePopUp,
@@ -43754,7 +43649,6 @@
                             cursor: !!this.props.cursorData && this.props.cursorData()
                         }), "undefined" != typeof document && window.innerWidth > 1024 && m.default.createElement(b.Resizer, {
                             t: this.props.t,
-                            addFont: this.addFont
                         }), "undefined" != typeof document && m.default.createElement(b.PageChangeOverlay, {
                             show: this.state.pageChangerVisible,
                             hidePageChanger: this.hidePageChanger
@@ -43850,7 +43744,6 @@
                                 return "route-main" === t && n.setRouteMatch(e, s), m.default.createElement(y.default, {
                                     component: n.firstChild
                                 }, ("*" === e.path && !n.BIAPageMatch || "*" !== e.path && s) && m.default.createElement(e.component, (0, r.default)({}, n.props, {
-                                    addFont: n.addFont,
                                     match: s
                                 }, o)))
                             }
@@ -43865,11 +43758,6 @@
                     key: "firstChild",
                     value: function(e) {
                         return m.default.Children.toArray(e.children)[0] || null
-                    }
-                }, {
-                    key: "addFont",
-                    value: function(e) {
-                        "undefined" != typeof document && this.FontLoader.load(e)
                     }
                 }]), n
             }(m.default.Component);
