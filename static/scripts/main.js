@@ -21192,23 +21192,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_WORK:
-                var n = t.index ? t.index : e.works.length;
-                return (0, r.default)({}, e, {
-                    works: [].concat((0, a.default)(e.works.slice(0, n)), [t.workData], (0, a.default)(e.works.slice(n)))
-                });
-            case i.ADD_WORKS:
-                var s = e.works ? [].concat((0, a.default)(e.works)) : [];
-                return t.workArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), s.sort(o.menuOrderSorting), (0, r.default)({}, e, {
-                    works: s
-                });
             default:
                 return e
         }
