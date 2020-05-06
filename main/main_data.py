@@ -1,4 +1,4 @@
-[{
+data = [{
     "id": 5896,
     "slug": "gallery",
     "type": "page",
