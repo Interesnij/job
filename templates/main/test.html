@@ -9,14 +9,14 @@
     <link rel=preload as=font crossorigin=crossorigin type=font/woff2 href="{% static 'fonts/Graphik-Regular.woff2' %}">
     <link rel=preload as=font crossorigin=crossorigin type=font/woff2 href="{% static 'fonts/Graphik-Semibold.woff2' %}">
     <link rel=preload as=font crossorigin=crossorigin type=font/woff2 href="{% static 'fonts/FuturaExtraBold.woff2' %}">
-    <link class=bia_styleLoader rel=preload href="{% static 'styles/style.css' %}" as=style onload='this.rel="stylesheet"'>
+    <link class="bia_styleLoader" rel="preload" href="{% static 'styles/style.css' %}" as="style" onload='this.rel="stylesheet"'>
     <noscript>
       <link type="text/css" rel="stylesheet" href="{% static 'styles/style.css' %}">
     </noscript>
     <script defer src="{% static 'scripts/main.js' %}" type="text/javascript" ></script>
-    <link "rel=stylesheet" href="{% static 'styles/preload.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/preload.css' %}">
 
-    <script src="{% static 'scripts/preload.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/preload.js' %}"></script>
 </head>
 
 <body>
