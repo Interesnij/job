@@ -9381,7 +9381,7 @@
             showFilter: !1,
             component: o.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=about",
+                url: "/pages?slug=about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
