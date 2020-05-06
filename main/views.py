@@ -9,5 +9,6 @@ class MainPageView(TemplateView):
 
 
 class MainPageView(View):
-	my_data = data
-	return data
+	def get(self,request,*args,**kwargs):
+		my_data = data
+		return data
