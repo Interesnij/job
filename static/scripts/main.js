@@ -8026,7 +8026,7 @@
         l = t.SET_PRODUCT_CATEGORIES = "SET_PRODUCT_CATEGORIES",
         c = t.SET_PRODUCT_DATE = "SET_PRODUCT_DATE",
         u = t.SET_PRODUCT_TAGS = "SET_PRODUCT_TAGS",
-        d = t.SET_PRODUCT_ATTRIBUTES = "SET_PRODUCT_ATTRIBUTES",
+        d = t.SET_PRODUCT_ATTRIBUTES = "SET_PRODUCT_ATTRIBUTES"
 }, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
