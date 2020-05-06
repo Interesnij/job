@@ -21192,23 +21192,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_WORK:
-                var n = t.index ? t.index : e.works.length;
-                return (0, r.default)({}, e, {
-                    works: [].concat((0, a.default)(e.works.slice(0, n)), [t.workData], (0, a.default)(e.works.slice(n)))
-                });
-            case i.ADD_WORKS:
-                var s = e.works ? [].concat((0, a.default)(e.works)) : [];
-                return t.workArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), s.sort(o.menuOrderSorting), (0, r.default)({}, e, {
-                    works: s
-                });
             default:
                 return e
         }
@@ -21306,64 +21289,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_PRODUCT:
-                if (!t.productData) return e;
-                var n = e.products ? [].concat((0, r.default)(e.products)) : [],
-                    s = !0;
-                return n.map(function(e) {
-                    return e.id !== t.productData.id ? e : (s = !1, t.productData)
-                }), s && n.push(t.productData), n.sort(o.menuOrderSorting), (0, a.default)({}, e, {
-                    products: n
-                });
-            case i.ADD_PRODUCTS:
-                var c = e.products ? [].concat((0, r.default)(e.products)) : [];
-                return t.productArray.forEach(function(e) {
-                    var t = !0;
-                    c = c.map(function(n) {
-                        return n.id !== e.id ? n : (t = !1, e)
-                    }), t && c.push(e)
-                }), c.sort(o.menuOrderSorting), (0, a.default)({}, e, {
-                    products: c
-                });
-            case i.REMOVE_PRODUCT:
-            case i.UPDATE_PRODUCT:
-                return (0, a.default)({}, e, {
-                    products: e.products.map(function(e) {
-                        return e.id === t.productData.id ? t.productData.product : e
-                    })
-                });
-            case i.SET_PRODUCT_CATEGORIES:
-                return (0, a.default)({}, e, {
-                    categories: t.categories
-                });
-            case i.SET_PRODUCT_DATE:
-                return (0, a.default)({}, e, {
-                    date: t.date
-                });
-            case i.SET_PRODUCT_TAGS:
-                return (0, a.default)({}, e, {
-                    tags: t.tags
-                });
-            case i.SET_PRODUCT_ATTRIBUTES:
-                var u = e.attributes ? [].concat((0, r.default)(e.attributes)) : [];
-                return t.attributes.forEach(function(e) {
-                    var t = !0;
-                    u = u.map(function(n) {
-                        return n.id !== e.id ? n : (t = !1, e)
-                    }), t && u.push(e)
-                }), (0, a.default)({}, e, {
-                    attributes: u
-                });
-            case i.ADD_PRODUCT_VARIATIONS:
-                var d = e.variations ? [].concat((0, r.default)(e.variations)) : [];
-                return t.productVariations.forEach(function(e) {
-                    var t = !0;
-                    d = d.map(function(n) {
-                        return n.id !== e.id ? n : (t = !1, e)
-                    }), t && d.push(e)
-                }), (0, a.default)({}, e, {
-                    variations: d
-                });
             default:
                 return e
         }
@@ -21394,18 +21319,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_GALLERYITEMS:
-                var n = e.gallery ? [].concat((0, r.default)(e.gallery)) : [];
-                return t.galleryArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        n = n.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && n.push(e)
-                    }
-                }), n.sort(o.menuOrderSorting), (0, a.default)({}, e, {
-                    gallery: n
-                });
             default:
                 return e
         }
