@@ -8,7 +8,7 @@ class MainPageView(TemplateView):
 	template_name='main/test.html'
 
 
-class MainPageView(View):
+class PagesView(View):
 	def get(self,request,*args,**kwargs):
 		my_data = data
 		return data
