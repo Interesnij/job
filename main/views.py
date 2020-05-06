@@ -1,5 +1,5 @@
 from django.views.generic.base import TemplateView
-from main_page import data
+from .main_data import data
 from django.views import View
 from django.http import HttpResponse
 
