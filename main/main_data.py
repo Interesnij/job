@@ -147,7 +147,7 @@
     },
     "content": {
         "rendered": "",
-        "protected": false
+        "protected": 'false'
     },
     "featured_media": 0,
     "parent": 0,
@@ -155,10 +155,10 @@
     "meta": [],
     "acf": {
         "block_background_type": "none",
-        "block_image": false,
+        "block_image": 'false',
         "block_image_position": "centered",
-        "block_image_offset": false,
-        "block_show_text": true,
+        "block_image_offset": 'false',
+        "block_show_text": 'true',
         "block_text_title": "",
         "intro_title": "Gooooooooooooooooood job",
         "confirmation_message": "You just successfully ordered a piece from studio job.\r\nA confirmation email has been sent to you. We will be in touch\r\n(or maybe not)with you about the shipping.",
@@ -195,10 +195,10 @@
     "meta": [],
     "acf": {
         "block_background_type": "none",
-        "block_image": false,
+        "block_image": 'false',
         "block_image_position": "centered",
-        "block_image_offset": false,
-        "block_show_text": true,
+        "block_image_offset": 'false',
+        "block_show_text": 'true',
         "block_text_title": "",
         "normal_shipping_info": "<p><strong>NOTE:</strong></p>\n<p><span style=\"font-weight: 400;\">Please note that some bronze pieces have a lead time. You can find the lead time at the product page.</span></p>\n<p>&nbsp;</p>\n<p><strong>BENELUX: Free shipping</strong></p>\n<p><span style=\"font-weight: 400;\">Shipping (1-2 working days) within the Netherlands is handled by PostNL, insurance is included. </span></p>\n<p>&nbsp;</p>\n<p><strong>EUROPE: Free express shipping</strong></p>\n<p><span style=\"font-weight: 400;\">We ship to all European countries, the delivery time is about 2 business days, insurance is included.</span></p>\n<p>&nbsp;</p>\n<p><strong>OUTSIDE EUROPE: €19</strong></p>\n<p><span style=\"font-weight: 400;\">We ship worldwide through DHL International, the delivery time can vary from 2 to 4 business days. Any customs charges that are invoiced will not be reimbursed by Studio Job. Insurance is included. </span></p>\n<p>&nbsp;</p>\n<p><em><strong>Tracking Information</strong></em></p>\n<p><span style=\"font-weight: 400;\">After ordering you will be informed about the delivery of your package. You will receive your tracking code by email.</span></p>\n",
         "custom_shipping_info": "<p><b>Delivery Bronze pieces</b></p>\n<p><span style=\"font-weight: 400;\">We ship our products to almost every corner of the globe!</span></p>\n<p><span style=\"font-weight: 400;\">Most of our products will be delivered out of stock within 1 or 2 days. For most bronze pieces there is a lead time. You can find the lead time on the product page. </span></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n",
