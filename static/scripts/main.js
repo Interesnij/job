@@ -7743,10 +7743,6 @@
                 return (0, o.default)({}, e, {
                     breadcrumbs: t.crumbs
                 });
-            case i.ADD_BREADCRUMBS:
-                return (0, o.default)({}, e, {
-                    breadcrumbs: [].concat((0, r.default)(e.breadcrumbs), (0, r.default)(t.crumbs))
-                });
             case i.SET_PAYMENT_METHODS:
                 return (0, o.default)({}, e, {
                     paymentMethods: t.paymentMethods
@@ -7857,11 +7853,6 @@
             type: s,
             crumbs: e
         }
-    }, t.addBreadcrumbs = function(e) {
-        return {
-            type: l,
-            crumbs: e
-        }
     }, t.setPaymentMethods = function(e) {
         return {
             type: c,
@@ -7907,7 +7898,6 @@
         o = t.SET_SUBSCRIBE_POPUP = "SET_SUBSCRIBE_POPUP",
         i = t.SET_SHOW_FILTER = "SET_SHOW_FILTER",
         s = t.SET_BREADCRUMBS = "SET_BREADCRUMBS",
-        l = t.ADD_BREADCRUMBS = "ADD_BREADCRUMBS",
         c = t.SET_PAYMENT_METHODS = "SET_PAYMENT_METHODS",
         u = t.SET_SEARCH_RESULTS = "SET_SEARCH_RESULTS",
         d = t.SET_HEADER_STATE = "SET_HEADER_STATE",
@@ -7982,40 +7972,6 @@
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.addEvent = function(e) {
-        return {
-            type: a,
-            eventData: e
-        }
-    }, t.addEvents = function(e) {
-        return {
-            type: r,
-            eventArray: e
-        }
-    };
-    var a = t.ADD_EVENT = "ADD_EVENT",
-        r = t.ADD_EVENTS = "ADD_EVENTS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addWork = function(e) {
-        return {
-            type: a,
-            workData: e
-        }
-    }, t.addWorks = function(e) {
-        return {
-            type: r,
-            workArray: e
-        }
-    };
-    var a = t.ADD_WORK = "ADD_WORK",
-        r = t.ADD_WORKS = "ADD_WORKS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
     }), t.setPageData = function(e) {
         return {
             type: a,
@@ -8038,27 +7994,7 @@
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.addProduct = function(e) {
-        return {
-            type: a,
-            productData: e
-        }
-    }, t.addProducts = function(e) {
-        return {
-            type: r,
-            productArray: e
-        }
-    }, t.removeProduct = function(e) {
-        return {
-            type: o,
-            productData: e
-        }
-    }, t.updateProduct = function(e) {
-        return {
-            type: i,
-            productData: e
-        }
-    }, t.setProductPage = function(e) {
+    }), t.setProductPage = function(e) {
         return {
             type: s,
             productPage: e
@@ -8078,96 +8014,19 @@
             type: u,
             tags: e
         }
-    }, t.addProductVariations = function(e) {
-        return {
-            type: f,
-            productVariations: e
-        }
     }, t.setProductAttributes = function(e) {
         return {
             type: d,
             attributes: e
         }
     };
-    var a = t.ADD_PRODUCT = "ADD_PRODUCT",
-        r = t.ADD_PRODUCTS = "ADD_PRODUCTS",
-        o = t.REMOVE_PRODUCT = "REMOVE_PRODUCT",
+    var o = t.REMOVE_PRODUCT = "REMOVE_PRODUCT",
         i = t.UPDATE_PRODUCT = "UPDATE_PRODUCT",
         s = t.SET_PRODUCT_PAGE = "SET_PRODUCT_PAGE",
         l = t.SET_PRODUCT_CATEGORIES = "SET_PRODUCT_CATEGORIES",
         c = t.SET_PRODUCT_DATE = "SET_PRODUCT_DATE",
         u = t.SET_PRODUCT_TAGS = "SET_PRODUCT_TAGS",
         d = t.SET_PRODUCT_ATTRIBUTES = "SET_PRODUCT_ATTRIBUTES",
-        f = t.ADD_PRODUCT_VARIATIONS = "ADD_PRODUCT_VARIATIONS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addGalleryItems = function(e) {
-        return {
-            type: a,
-            galleryArray: e
-        }
-    };
-    var a = t.ADD_GALLERYITEMS = "ADD_GALLERYITEMS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addCareers = function(e) {
-        return {
-            type: a,
-            careerArray: e
-        }
-    };
-    var a = t.ADD_CAREERS = "ADD_CAREERS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addCustom = function(e, t) {
-        return {
-            type: a,
-            postType: e,
-            customsData: t
-        }
-    }, t.addCustoms = function(e, t) {
-        return {
-            type: r,
-            postType: e,
-            customsArray: t
-        }
-    };
-    var a = t.ADD_CUSTOM = "ADD_CUSTOM",
-        r = t.ADD_CUSTOMS = "ADD_CUSTOMS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addPartner = function(e) {
-        return {
-            type: a,
-            partnerData: e
-        }
-    }, t.addPartners = function(e) {
-        return {
-            type: r,
-            partnerArray: e
-        }
-    };
-    var a = t.ADD_PARTNER = "ADD_PARTNER",
-        r = t.ADD_PARTNERS = "ADD_PARTNERS"
-}, function(e, t, n) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", {
-        value: !0
-    }), t.addCursor = function(e) {
-        return {
-            type: a,
-            cursor: e
-        }
-    };
-    var a = t.ADD_CURSOR = "ADD_CURSOR"
 }, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
@@ -8242,9 +8101,6 @@
             setFilters: function(t) {
                 var n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 e((0, o.setFilters)(t, n))
-            },
-            addProductVariations: function(t) {
-                e((0, o.addProductVariations)(t))
             }
         }
     })(s.default);
@@ -8253,7 +8109,7 @@
     "use strict";
     Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.addCustoms = t.addCustom = t.addCursor = t.addCareers = t.addGalleryItems = t.addGalleryItem = t.addWorks = t.addWork = t.addPartners = t.addPartner = t.addEvents = t.addEvent = t.addProductVariations = t.setProductAttributes = t.setProductTags = t.setProductDate = t.setProductCategories = t.setProductPage = t.updateProduct = t.removeProduct = t.addProducts = t.addProduct = t.setNews = t.setLocaleSettings = t.clearCart = t.replaceCartTotals = t.replaceCart = t.updateCartItem = t.removeProductFromCart = t.addProductsToCart = t.setPageData = t.setFilters = t.setFilter = t.setupLayouts = t.setCountryData = t.setHeaderState = t.setSearchResults = t.setPaymentMethods = t.addBreadcrumbs = t.setBreadcrumbs = t.setShowFilter = t.setCursor = t.dismissSubscribePopUp = t.dismissCookiePopUp = t.setPreloaderSeen = t.removeUserData = t.setUserData = void 0;
+    }), t.setProductAttributes = t.setProductTags = t.setProductDate = t.setProductCategories = t.setProductPage = t.setNews = t.setLocaleSettings = t.clearCart = t.replaceCartTotals = t.replaceCart = t.updateCartItem = t.removeProductFromCart = t.addProductsToCart = t.setPageData = t.setFilters = t.setFilter = t.setupLayouts = t.setCountryData = t.setHeaderState = t.setSearchResults = t.setPaymentMethods = t.setBreadcrumbs = t.setShowFilter = t.setCursor = t.dismissSubscribePopUp = t.dismissCookiePopUp = t.setPreloaderSeen = t.removeUserData = t.setUserData = void 0;
     var a = n(198),
         r = n(207),
         o = n(197),
@@ -8267,7 +8123,7 @@
         p = n(201),
         h = n(205),
         m = n(209);
-    t.setUserData = a.setUserData, t.removeUserData = a.removeUserData, t.setPreloaderSeen = o.setPreloaderSeen, t.dismissCookiePopUp = o.dismissCookiePopUp, t.dismissSubscribePopUp = o.dismissSubscribePopUp, t.setCursor = o.setCursor, t.setShowFilter = o.setShowFilter, t.setBreadcrumbs = o.setBreadcrumbs, t.addBreadcrumbs = o.addBreadcrumbs, t.setPaymentMethods = o.setPaymentMethods, t.setSearchResults = o.setSearchResults, t.setHeaderState = o.setHeaderState, t.setCountryData = o.setCountryData, t.setupLayouts = o.setupLayouts, t.setFilter = o.setFilter, t.setFilters = o.setFilters, t.setPageData = s.setPageData, t.addProductsToCart = l.addProductsToCart, t.removeProductFromCart = l.removeProductFromCart, t.updateCartItem = l.updateCartItem, t.replaceCart = l.replaceCart, t.replaceCartTotals = l.replaceCartTotals, t.clearCart = l.clearCart, t.setLocaleSettings = l.setLocaleSettings, t.setNews = c.setNews, t.addProduct = u.addProduct, t.addProducts = u.addProducts, t.removeProduct = u.removeProduct, t.updateProduct = u.updateProduct, t.setProductPage = u.setProductPage, t.setProductCategories = u.setProductCategories, t.setProductDate = u.setProductDate, t.setProductTags = u.setProductTags, t.setProductAttributes = u.setProductAttributes, t.addProductVariations = u.addProductVariations, t.addEvent = d.addEvent, t.addEvents = d.addEvents, t.addPartner = f.addPartner, t.addPartners = f.addPartners, t.addWork = p.addWork, t.addWorks = p.addWorks, t.addGalleryItem = h.addGalleryItem, t.addGalleryItems = h.addGalleryItems, t.addCareers = i.addCareers, t.addCursor = m.addCursor, t.addCustom = r.addCustom, t.addCustoms = r.addCustoms
+    t.setUserData = a.setUserData, t.removeUserData = a.removeUserData, t.setPreloaderSeen = o.setPreloaderSeen, t.dismissCookiePopUp = o.dismissCookiePopUp, t.dismissSubscribePopUp = o.dismissSubscribePopUp, t.setCursor = o.setCursor, t.setShowFilter = o.setShowFilter, t.setBreadcrumbs = o.setBreadcrumbs, t.setPaymentMethods = o.setPaymentMethods, t.setSearchResults = o.setSearchResults, t.setHeaderState = o.setHeaderState, t.setCountryData = o.setCountryData, t.setupLayouts = o.setupLayouts, t.setFilter = o.setFilter, t.setFilters = o.setFilters, t.setPageData = s.setPageData, t.addProductsToCart = l.addProductsToCart, t.removeProductFromCart = l.removeProductFromCart, t.updateCartItem = l.updateCartItem, t.replaceCart = l.replaceCart, t.replaceCartTotals = l.replaceCartTotals, t.clearCart = l.clearCart, t.setLocaleSettings = l.setLocaleSettings, t.setNews = c.setNews, t.removeProduct = u.removeProduct, t.updateProduct = u.updateProduct, t.setProductPage = u.setProductPage, t.setProductCategories = u.setProductCategories, t.setProductDate = u.setProductDate, t.setProductTags = u.setProductTags, t.setProductAttributes = u.setProductAttributes
 }, function(e, t, n) {
     "use strict";
     Object.defineProperty(t, "__esModule", {
@@ -8358,10 +8214,7 @@
                     getOptions: this.props.getOptions,
                     appData: this.props.appData,
                     isOpen: n,
-                    addWorks: this.props.addWorks,
-                    addGalleryItems: this.props.addGalleryItems,
                     setNews: this.props.setNews,
-                    addProducts: this.props.addProducts,
                     toggleMenu: this.toggleMenu,
                     toggleSearch: this.toggleSearch,
                     toggleCart: this.toggleCart,
@@ -8393,8 +8246,6 @@
                     getState: this.props.getState,
                     cartData: this.props.cartData,
                     getOptions: this.props.getOptions,
-                    addProducts: this.props.addProducts,
-                    addProductVariation: this.props.addProductVariation,
                     removeProductFromCart: this.props.removeProductFromCart,
                     isOpen: s
                 }), !!this.props.headerActive() && d.default.createElement(f.Overlay, {
@@ -8429,39 +8280,19 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=about",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }, {
                 url: "/api/wc/v3/products?per_page=2&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "productData.products",
-                    client: "addProducts"
-                }
+                action: "set"
             }, {
                 url: "/api/wp/v2/work?per_page=3&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "workData.works",
-                    client: "addWorks"
-                }
+                action: "set"
             }, {
                 url: "/api/wp/v2/news?per_page=1&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "newsData.news",
-                    client: "setNews"
-                }
+                action: "set"
             }, {
                 url: "/api/wp/v2/gallery?per_page=2&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "galleryData.gallery",
-                    client: "setGalleryItems"
-                }
+                action: "set"
             }]
         },
         work: {
@@ -8471,11 +8302,7 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wp/v2/work?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "workData.works",
-                    client: "addWorks"
-                }
+                action: "set"
             }]
         },
         news: {
@@ -8485,11 +8312,7 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wp/v2/news?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "newsData.news",
-                    client: "setNews"
-                }
+                action: "set"
             }]
         },
         shop: {
@@ -8499,11 +8322,7 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wc/v3/products?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "productData.products",
-                    client: "addProducts"
-                }
+                action: "set"
             }]
         },
         gallery: {
@@ -8513,11 +8332,7 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wp/v2/gallery?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "galleryData.gallery",
-                    client: "addGalleryItems"
-                }
+                action: "set"
             }]
         }
     }, o.default, {
@@ -8696,11 +8511,7 @@
                         cartData: this.props.cartData,
                         getOptions: this.props.getOptions,
                         setupLayouts: this.props.setupLayouts,
-                        addProducts: this.props.addProducts,
-                        addWorks: this.props.addWorks,
-                        addGalleryItems: this.props.addGalleryItems,
                         setNews: this.props.setNews,
-                        addCustoms: this.props.addCustoms,
                         route: this.props.route,
                         layouts: t,
                         filters: e
@@ -8710,11 +8521,7 @@
                         cartData: this.props.cartData,
                         getOptions: this.props.getOptions,
                         setupLayouts: this.props.setupLayouts,
-                        addProducts: this.props.addProducts,
-                        addWorks: this.props.addWorks,
                         setNews: this.props.setNews,
-                        addGalleryItems: this.props.addGalleryItems,
-                        addCustoms: this.props.addCustoms,
                         route: this.props.route,
                         baseLayouts: _,
                         getLayout: this.getLayout,
@@ -9354,11 +9161,7 @@
             component: a.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=checkout",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         confirm: {
@@ -9368,11 +9171,7 @@
             component: r.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=confirm",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         about: {
@@ -9382,11 +9181,7 @@
             component: o.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=about",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         press: {
@@ -9396,11 +9191,7 @@
             component: u.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=press",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         contact: {
@@ -9410,11 +9201,7 @@
             component: s.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=contact",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         jobs: {
@@ -9424,18 +9211,10 @@
             component: l.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=jobs",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }, {
                 url: "/api/wp/v2/jobs?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "careerData.careers",
-                    client: "addCareers"
-                }
+                action: "set"
             }]
         },
         agenda: {
@@ -9445,18 +9224,10 @@
             component: i.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=agenda",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }, {
                 url: "/api/wp/v2/events?per_page=10&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "eventData.events",
-                    client: "addEvents"
-                }
+                action: "set"
             }]
         },
         partners: {
@@ -9466,11 +9237,7 @@
             component: c.default,
             getRequests: [{
                 url: "/api/wp/v2/partners?per_page=9&page=1&status=publish",
-                action: "set",
-                save: {
-                    ssr: "partnerData.partners",
-                    client: "addPartners"
-                }
+                action: "set"
             }]
         },
         shipping: {
@@ -9480,11 +9247,7 @@
             component: d.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=shipping",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         },
         terms: {
@@ -9494,11 +9257,7 @@
             component: d.default,
             getRequests: [{
                 url: "/api/wp/v2/pages?slug=terms",
-                action: "set",
-                save: {
-                    ssr: "pageData.pages",
-                    client: "setPageData"
-                }
+                action: "set"
             }]
         }
     }
@@ -10532,15 +10291,12 @@
         x = {
             products: {
                 url: "/api/wc/v3/products/",
-                save: "addProducts"
             },
             works: {
                 url: "/api/wp/v2/work/",
-                save: "addWorks"
             },
             gallery: {
                 url: "/api/wp/v2/gallery/",
-                save: "addGalleryItems"
             },
             news: {
                 url: "/api/wp/v2/news/",
@@ -10609,20 +10365,10 @@
                                     parent_id: e
                                 })
                             });
-                            t.props.addProductVariations && t.props.addProductVariations(a)
                         }
                     }).catch(function(e) {
                         console.log(e)
                     })
-                }
-            }, {
-                key: "addBreadcrumb",
-                value: function() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                        t = this.props.route,
-                        n = void 0 === t ? "" : t,
-                        a = this.getSingleCrumb(this.getOverviewLink(), n);
-                    return this.setSingleCrumb(e, a)
                 }
             }, {
                 key: "setSingleCrumb",
@@ -21133,27 +20879,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_EVENT:
-                var n = t.index ? t.index : e.events.length;
-                return (0, r.default)({}, e, {
-                    events: [].concat((0, a.default)(e.events.slice(0, n)), [t.eventData], (0, a.default)(e.events.slice(n)))
-                });
-            case i.ADD_EVENTS:
-                var s = e.events ? [].concat((0, a.default)(e.events)) : [];
-                return t.eventArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), s.sort(function(e, t) {
-                    var n = (0, o.default)(e.acf.end_date),
-                        a = (0, o.default)(t.acf.end_date);
-                    return n.isBefore(a) ? 1 : -1
-                }), (0, r.default)({}, e, {
-                    events: s
-                });
             default:
                 return e
         }
@@ -21345,17 +21070,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
             t = arguments[1];
         switch (t.type) {
-            case o.ADD_CAREERS:
-                var n = e.careers ? [].concat((0, r.default)(e.careers)) : [];
-                return t.careerArray.forEach(function(e) {
-                    for (var t = !1, a = 0; a < n.length; a++)
-                        if (t = e.id === n[a].id) {
-                            n[a] = e;
-                            break
-                        } t || n.push(e)
-                }), (0, a.default)({}, e, {
-                    careers: n
-                });
             default:
                 return e
         }
@@ -21408,23 +21122,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
             t = arguments[1];
         switch (t.type) {
-            case o.ADD_PARTNER:
-                var n = t.index ? t.index : e.partners.length;
-                return (0, r.default)({}, e, {
-                    partners: [].concat((0, a.default)(e.partners.slice(0, n)), [t.partnerData], (0, a.default)(e.partners.slice(n)))
-                });
-            case o.ADD_PARTNERS:
-                var i = e.partners ? [].concat((0, a.default)(e.partners)) : [];
-                return t.partnerArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        i = i.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && i.push(e)
-                    }
-                }), (0, r.default)({}, e, {
-                    partners: i
-                });
             default:
                 return e
         }
@@ -21447,8 +21144,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             t = arguments[1];
         switch (t.type) {
-            case a.ADD_CURSOR:
-                return t.cursor;
             default:
                 return e
         }
@@ -22826,17 +22521,14 @@
                 products: {
                     postType: "products",
                     url: "/api/wc/v3/products?per_page=10&status=publish&page=",
-                    save: "addProducts"
                 },
                 work: {
                     postType: "works",
                     url: "/api/wp/v2/work?per_page=10&page=",
-                    save: "addWorks"
                 },
                 gallery: {
                     postType: "gallery",
                     url: "/api/wp/v2/gallery?per_page=10&page=",
-                    save: "addGalleryItems"
                 },
                 news: {
                     postType: "news",
@@ -22846,12 +22538,10 @@
                 pictures: {
                     postType: "pictures",
                     url: "/api/wp/v2/pictures?per_page=10&page=",
-                    save: "addCustoms"
                 },
                 instagram: {
                     postType: "instagram",
                     url: "/api/wp/v2/instagram?per_page=10&page=",
-                    save: "addCustoms"
                 }
             },
             _ = function(t) {
