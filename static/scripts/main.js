@@ -8428,7 +8428,7 @@
             showFilter: !0,
             component: r.default,
             getRequests: [{
-                url: "/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
@@ -9381,7 +9381,7 @@
             showFilter: !1,
             component: o.default,
             getRequests: [{
-                url: "/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
@@ -43705,7 +43705,7 @@
             showFilter: !0,
             component: r.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
