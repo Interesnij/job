@@ -2,7 +2,7 @@ from django.views.generic.base import TemplateView
 from .main_data import data
 from .about_data import about
 from django.views import View
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse
 
 
 class MainPageView(TemplateView):
@@ -18,4 +18,4 @@ class PagesView(View):
 class AboutView(View):
 	def get(self,request,*args,**kwargs):
 		my_data = about
-		return my_data
+		return JsonResponse(my_data)
