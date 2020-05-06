@@ -9444,7 +9444,7 @@
             showFilter: !1,
             component: i.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=agenda",
+                url: "/pages?slug=agenda",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
