@@ -21140,14 +21140,7 @@
                 });
             case i.ADD_EVENTS:
                 var s = e.events ? [].concat((0, a.default)(e.events)) : [];
-                return t.eventArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), s.sort(function(e, t) {
+                return s.sort(function(e, t) {
                     var n = (0, o.default)(e.acf.end_date),
                         a = (0, o.default)(t.acf.end_date);
                     return n.isBefore(a) ? 1 : -1
