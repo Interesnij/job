@@ -16,9 +16,9 @@ class PagesView(TemplateView):
 		return super(PagesView,self).get(request,*args,**kwargs)
 
 	def get_context_data(self, **kwargs):
-        context = super(PagesView, self).get_context_data(**kwargs)
-        context['data'] = data
-        return context
+		context = super(PagesView, self).get_context_data(**kwargs)
+		context['data'] = data
+		return context
 
 
 class AboutView(View):
