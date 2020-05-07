@@ -22456,7 +22456,7 @@
                     ref: function(t) {
                         return e.audio = t
                     },
-                    src: (0, c.getStaticAssetUrl)("/music/hydraulic_lift.mp3"),
+                    src: (0, c.getStaticAssetUrl)("/static/music/hydraulic_lift.mp3"),
                     loop: !0
                 }))
             }
