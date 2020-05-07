@@ -9,10 +9,16 @@ class MainPageView(TemplateView):
 	template_name='main/test.html'
 
 
-class PagesView(View):
+class PagesView(TemplateView):
+	template_name = "main/pages.html"
 	def get(self,request,*args,**kwargs):
-		my_data = data
-		return my_data
+		self.my_data = data
+		return super(PagesView,self).get(request,*args,**kwargs)
+
+	def get_context_data(self, **kwargs):
+        context = super(PagesView, self).get_context_data(**kwargs)
+        context['data'] = data
+        return context
 
 
 class AboutView(View):
