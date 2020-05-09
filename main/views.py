@@ -32,5 +32,5 @@ class ApiPagesView(ListView):
     template_name="api.html"
     cat=None
     def get(self,request,*args,**kwargs):
-		  leads_as_json = serializers.serialize('json', data)
-		  return HttpResponse(leads_as_json, content_type='json')
+		leads_as_json = serializers.serialize('json', data)
+		return HttpResponse(leads_as_json, content_type='json')
