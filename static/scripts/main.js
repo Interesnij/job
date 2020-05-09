@@ -9444,14 +9444,14 @@
             showFilter: !1,
             component: i.default,
             getRequests: [{
-                url: "/pages?slug=agenda",
+                url: "/api_pages?slug=agenda",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
                     client: "setPageData"
                 }
             }, {
-                url: "/api/wp/v2/events?per_page=10&page=1&status=publish",
+                url: "/api_pages?per_page=10&page=1&status=publish",
                 action: "set",
                 save: {
                     ssr: "eventData.events",
@@ -34561,7 +34561,7 @@
         }, {
             key: "ajaxSingleItem",
             value: function(e, t) {
-                var n = "/pages/" + e + "/" + t;
+                var n = "/api_pages/" + e + "/" + t;
                 if (this.requestsOut.includes(n)) return !1;
                 var a = {
                     work: this.props.addWorks,
@@ -34571,7 +34571,7 @@
                 };
                 return this.requestsOut.push(n), (0, f.ajax)({
                     method: "GET",
-                    url: "/pages/" + e + "/" + t
+                    url: "/api_pages/" + e + "/" + t
                 }).then(function(t) {
                     t.code || a[e]([t])
                 }).catch(function(e) {
