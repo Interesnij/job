@@ -8428,7 +8428,7 @@
             showFilter: !0,
             component: r.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
@@ -9381,7 +9381,7 @@
             showFilter: !1,
             component: o.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
@@ -9444,14 +9444,14 @@
             showFilter: !1,
             component: i.default,
             getRequests: [{
-                url: "/pages?slug=agenda",
+                url: "/api/wp/v2/pages?slug=agenda",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
                     client: "setPageData"
                 }
             }, {
-                url: "/api/wp/v2/events?per_page=10&page=1&status=publish",
+                url: "/pages?per_page=10&page=1&status=publish",
                 action: "set",
                 save: {
                     ssr: "eventData.events",
@@ -21140,14 +21140,7 @@
                 });
             case i.ADD_EVENTS:
                 var s = e.events ? [].concat((0, a.default)(e.events)) : [];
-                return t.eventArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return n.id !== e.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), s.sort(function(e, t) {
+                return s.sort(function(e, t) {
                     var n = (0, o.default)(e.acf.end_date),
                         a = (0, o.default)(t.acf.end_date);
                     return n.isBefore(a) ? 1 : -1
@@ -21382,19 +21375,6 @@
         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
             t = arguments[1];
         switch (t.type) {
-            case i.ADD_CUSTOM:
-                var n = t.index ? t.index : e[t.postType].length;
-                return (0, o.default)({}, e, (0, a.default)({}, t.postType, [].concat((0, r.default)(e[t.postType].slice(0, n)), [t.customsData], (0, r.default)(e[t.postType].slice(n)))));
-            case i.ADD_CUSTOMS:
-                var s = e[t.postType] ? [].concat((0, r.default)(e[t.postType])) : [];
-                return t.customsArray.forEach(function(e) {
-                    if (e) {
-                        var t = !0;
-                        s = s.map(function(n) {
-                            return e.id !== n.id ? n : (t = !1, e)
-                        }), t && s.push(e)
-                    }
-                }), (0, o.default)({}, e, (0, a.default)({}, t.postType, s));
             default:
                 return e
         }
@@ -22463,7 +22443,7 @@
                     ref: function(t) {
                         return e.audio = t
                     },
-                    src: (0, c.getStaticAssetUrl)("/music/hydraulic_lift.mp3"),
+                    src: (0, c.getStaticAssetUrl)("/static/music/hydraulic_lift.mp3"),
                     loop: !0
                 }))
             }
@@ -43705,7 +43685,7 @@
             showFilter: !0,
             component: r.default,
             getRequests: [{
-                url: "/api/wp/v2/pages?slug=about",
+                url: "/about",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
