@@ -3,7 +3,8 @@ from .main_data import data
 from .about_data import about
 from django.views import View
 from django.http import HttpResponse, HttpResponseBadRequest, JsonResponse
-from django.core import serializers
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 
 class MainPageView(TemplateView):
@@ -28,9 +29,7 @@ class AboutView(View):
 		return JsonResponse(my_data)
 
 
-class ApiPagesView(TemplateView):
-	template_name="api.html"
+class ApiPagesView(APIView):
 
-	def get(self,request,*args,**kwargs):
-		leads_as_json = serializers.serialize('json', data)
-		return HttpResponse(leads_as_json, content_type='json')
+	def get(self, request):
+		return HttpResponse(data, status=status.HTTP_200_OK)
