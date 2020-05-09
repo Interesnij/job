@@ -28457,7 +28457,7 @@
                     ref: function(e) {
                         return t.hit = e
                     },
-                    src: (0, u.getStaticAssetUrl)("/music/hit.mp3")
+                    src: (0, u.getStaticAssetUrl)("/static/music/hit.mp3")
                 }))
             }
         }, {
