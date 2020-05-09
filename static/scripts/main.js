@@ -9444,14 +9444,14 @@
             showFilter: !1,
             component: i.default,
             getRequests: [{
-                url: "/api_pages?slug=agenda",
+                url: "/api/wp/v2/pages?slug=agenda",
                 action: "set",
                 save: {
                     ssr: "pageData.pages",
                     client: "setPageData"
                 }
             }, {
-                url: "/api_pages?per_page=10&page=1&status=publish",
+                url: "/pages?per_page=10&page=1&status=publish",
                 action: "set",
                 save: {
                     ssr: "eventData.events",
