@@ -34561,7 +34561,7 @@
         }, {
             key: "ajaxSingleItem",
             value: function(e, t) {
-                var n = "/api_pages/" + e + "/" + t;
+                var n = "/api/wp/v2/" + e + "/" + t;
                 if (this.requestsOut.includes(n)) return !1;
                 var a = {
                     work: this.props.addWorks,
@@ -34571,7 +34571,7 @@
                 };
                 return this.requestsOut.push(n), (0, f.ajax)({
                     method: "GET",
-                    url: "/api_pages/" + e + "/" + t
+                    url: "/api/wp/v2/" + e + "/" + t
                 }).then(function(t) {
                     t.code || a[e]([t])
                 }).catch(function(e) {
