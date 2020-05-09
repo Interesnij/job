@@ -32,4 +32,4 @@ class AboutView(View):
 class ApiPagesView(APIView):
 
 	def get(self, request):
-		return HttpResponse(data, status=status.HTTP_200_OK)
+		return Response(data, status=status.HTTP_200_OK)
