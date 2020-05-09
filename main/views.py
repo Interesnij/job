@@ -8,7 +8,7 @@ from rest_framework.views import APIView
 
 
 class MainPageView(TemplateView):
-	template_name='main/test.html'
+	template_name='main/mainpage.html'
 
 
 class PagesView(TemplateView):
