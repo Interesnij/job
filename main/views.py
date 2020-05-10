@@ -1,6 +1,4 @@
 from django.views.generic.base import TemplateView
-from ad_categories.models import AdCategory
-from skill_categories.models import SkillCategory
 
 
 class MainPageView(TemplateView):
