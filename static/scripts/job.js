@@ -347,7 +347,7 @@
                     key: "initServiceWorker",
                     value: function() {
                         if (!("serviceWorker" in navigator)) return !1;
-                        var e = window.BIA_STATIC_ASSET_URL + "/serviceWorker.js";
+                        var e = window.STATIC_ASSET_URL + "/serviceWorker.js";
                         e += "?js=" + encodeURIComponent(window.BIA_SRC_FILES.js), e += "&css=" + encodeURIComponent(window.BIA_SRC_FILES.css), navigator.serviceWorker.register(e).then(function(e) {
                             console.log("ServiceWorker registration successful with scope: ", e.scope)
                         }, function(e) {
