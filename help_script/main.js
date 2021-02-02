@@ -441,7 +441,7 @@
             r > 0 && n.push(a);
             return n
         }, t.getStaticAssetUrl = function(t) {
-            var n = e.config && e.config.STATIC_ASSET_URL || "/static" || ""; 
+            var n = e.config && e.config.STATIC_ASSET_URL || "/static" || "";
             if (!t.includes("://") && n && "" != n) return n + t;
             return t
         }, t.decodeHTMLEntities = function(e) {
@@ -32308,7 +32308,7 @@
 }, function(e, t) {
     e.exports = {
         inner: "KmwnXs",
-        menuLogoWrap: "_21JGmR",
+        menuLogoWrap: "menu_box1",
         menuLogo: "r8XlNk",
         breadcrumbs: "_2c4W0r",
         hasItems: "_1yXsqE",
@@ -32329,7 +32329,7 @@
         infoRod: "_1wMsZu",
         searchSvg: "_1hk_5U",
         searchWrap: "_1Ceh09",
-        menuDesktop: "_1QVAap",
+        menuDesktop: "menu_box",
         wiggle: "FPeeRM"
     }
 }, function(e, t, n) {
@@ -32656,8 +32656,8 @@
     t.default = m
 }, function(e, t) {
     e.exports = {
-        navigationInner: "_1dQ58M",
-        divLink: "m_i3RK",
+        navigationInner: "menu_block",
+        divLink: "menu_item",
         link: "_3_xBmU",
         linkText: "NE5U4n",
         linkTextNew: "_1ouC3i",
@@ -43068,8 +43068,8 @@
 }, function(e, t) {
     e.exports = {
         container: "_3yYUhH",
-        spacer: "_2d-4oR",
-        header: "_2XlmXB",
+        spacer: "one_box",
+        header: "my_header",
         cartOpen: "_2cg5gc",
         menuOpen: "_3bsFvM",
         headerLogo: "_10r6Mz",
