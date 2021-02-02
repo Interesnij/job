@@ -130,7 +130,7 @@
     opacity: 0
 }
 
-.bia_preloader {
+.my_preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -147,13 +147,13 @@
     cursor: progress
 }
 
-.bia_preloader.animateOut {
+.my_preloader.animateOut {
     -webkit-transform: translateX(-102%);
     -o-transform: translateX(-102%);
     transform: translateX(-102%)
 }
 
-.bia_preloadermask {
+.my_preloadermask {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -172,7 +172,7 @@
 }
 
 .bia_bg,
-.bia_preloadermask {
+.my_preloadermask {
     position: absolute;
     top: 0;
     left: 0;
@@ -190,7 +190,7 @@
     animation: translate 3s linear infinite
 }
 
-.bia_preloader.animateOut .bia_preloadermask {
+.my_preloader.animateOut .my_preloadermask {
     -webkit-transform: translateX(80%);
     -o-transform: translateX(80%);
     transform: translateX(80%)
@@ -262,7 +262,7 @@
         }
     }
 
-    .bia_preloader {
+    .my_preloader {
         box-shadow: 0 0 0 .33333vw #000
     }
 

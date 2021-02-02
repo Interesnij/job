@@ -286,7 +286,7 @@
                             this.loaderActive = !0, this.initServiceWorker();
                             var t = navigator.userAgent.toLowerCase(),
                                 n = this.safariVersion(t);
-                            (t.indexOf("firefox") > -1 || t.indexOf("msie ") > -1 || t.indexOf("trident/") > -1 || t.indexOf("edge") > -1 || n && n[0] <= 11) && this.loadAditionalStyling(), this.html = document.querySelector("html"), this.main = document.querySelector("#main"), this.loaderEl = document.querySelector(".bia_preloader");
+                            (t.indexOf("firefox") > -1 || t.indexOf("msie ") > -1 || t.indexOf("trident/") > -1 || t.indexOf("edge") > -1 || n && n[0] <= 11) && this.loadAditionalStyling(), this.html = document.querySelector("html"), this.main = document.querySelector("#main"), this.loaderEl = document.querySelector(".my_preloader");
                             var r = document.querySelectorAll(".bia_text");
                             this.html.classList.add("noScroll");
                             var o = ["Job is painting the walls", "Ready for serious fun?", "Preparing easter eggs", "Getting some coffee", "Let's Barock & Roll"];
