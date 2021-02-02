@@ -441,7 +441,7 @@
             r > 0 && n.push(a);
             return n
         }, t.getStaticAssetUrl = function(t) {
-            var n = e.config && e.config.STATIC_ASSET_URL || window.BIA_STATIC_ASSET_URL || "";
+            var n = e.config && e.config.STATIC_ASSET_URL || "/static" || ""; 
             if (!t.includes("://") && n && "" != n) return n + t;
             return t
         }, t.decodeHTMLEntities = function(e) {
@@ -2397,7 +2397,7 @@
                 (0, r.default)(this, n);
                 var t = (0, i.default)(this, (n.__proto__ || (0, a.default)(n)).call(this, e.props));
                 if (t._setPageTitle(e.title), t._isInitial = "undefined" == typeof document || !window.BIA_LAST_EL, "undefined" == typeof document) return (0, i.default)(t);
-                if (t._biaContent = document.querySelector(".bia_content"), t._transform = t._transform.bind(t), window.BIA_LAST_EL && !e.singlePage) {
+                if (t._biaContent = document.querySelector(".my_content"), t._transform = t._transform.bind(t), window.BIA_LAST_EL && !e.singlePage) {
                     var o = window.BIA_LAST_EL.getBoundingClientRect().height + .0333 * window.innerWidth;
                     t._biaContent.style.minHeight = o + "px", window.BIA_LAST_EL.classList.add(u.default.out)
                 }
@@ -21754,7 +21754,7 @@
                             x: 0
                         },
                         onend: function() {
-                            document.querySelector(".bia_content").style.minHeight = "", window.scrollTo(0, 0), e.tween(e.container, {
+                            document.querySelector(".my_content").style.minHeight = "", window.scrollTo(0, 0), e.tween(e.container, {
                                 duration: window.BIA_TRANSITION_TIMING.duration / 2 - 75,
                                 delay: 75,
                                 easing: "expoOut",
