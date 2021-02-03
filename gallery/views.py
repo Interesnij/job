@@ -1,7 +1,6 @@
 from django.views.generic.base import TemplateView
 import json
 from django.http import HttpResponse
-from .data import * as _array
 from django.views import View
 
 
@@ -10,5 +9,4 @@ class GalleryView(TemplateView):
 
 
 class GalleryJson(View):
-    def get(self, request, **kwargs):
-        return HttpResponse(json.dumps({"_array": _array}))
+    template_name = "gallery_json.html"
