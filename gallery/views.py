@@ -8,5 +8,5 @@ class GalleryView(TemplateView):
     template_name = "gallery.html"
 
 
-class GalleryJson(View):
+class GalleryJson(TemplateView):
     template_name = "gallery_json.html"
