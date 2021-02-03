@@ -29,6 +29,7 @@ MY_APPS = [
     'gallery',
     'shop',
     'news',
+    'instagram',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + MY_APPS
