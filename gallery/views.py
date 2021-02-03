@@ -15,4 +15,4 @@ class GalleryJson(TemplateView):
     template_name = "gallery_json.html"
 
     def get(self, request, **kwargs):
-        return HttpResponse(json.dumps({"result": result}))
+        return HttpResponse(json.dumps({"result": data}))
