@@ -9,4 +9,5 @@ urlpatterns = [
     path(r'gallery/', include ('gallery.urls')),
     path(r'shop/', include ('shop.urls')),
     path(r'news/', include ('news.urls')),
+    path(r'instagram/', include ('instagram.urls')),
 ]

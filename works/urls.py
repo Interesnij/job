@@ -4,4 +4,4 @@ from works.views import *
 
 urlpatterns = [
     url(r'^$', WorksView.as_view(), name='works'),
-]
+] 
